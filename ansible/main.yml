@@ -1,0 +1,14 @@
+---
+- hosts: VPNAccess
+  roles:
+    - vpn
+- hosts: all:!VPNAccess
+  roles:
+    - common
+- hosts: master
+  roles:
+    - master
+- hosts: node
+  roles:
+    - node
+

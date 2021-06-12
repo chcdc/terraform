@@ -77,12 +77,13 @@ WORKDIR ${HOME_DIR}
 
 USER ${USER}
 
-# ANSIBLE
-RUN pip3 install paramiko ansible==2.10 requests boto3==1.17.92 botocore==1.20.92
+# PYTHON PACKAGES
+COPY --chown=${USER}:${USER} docker/requirements.txt /tmp/requirements.txt
+RUN export PATH=/${USER}/.local/bin:$PATH
+RUN pip3 install -r /tmp/requirements.txt
 
 # OH MY BASH
 RUN bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)"
-
 
 COPY --chown=${USER}:${USER} docker/.bashrc ${HOME_DIR}/.bashrc
 COPY --chown=${USER}:${USER} docker/aliases-kubectl.sh /alias/aliases-kubectl.sh

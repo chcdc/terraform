@@ -1,0 +1,59 @@
+---
+#- name: Include vars
+#  include_vars:
+#    dir: roles/common/vars/main.yml
+
+- name: Get Images
+  command: "kubeadm config images pull"
+
+- name: Initialize the Kubernetes cluster using kubeadm
+  command: kubeadm init --node-name {{ ansible_hostname }} --pod-network-cidr="{{ CIDRnetworkPods }}"
+
+- name: Creates directory
+  file:
+    path: "{{ UserKubeDir }}"
+    state: directory
+    owner: "{{ user }}"
+    group: "{{ group }}"
+    mode: 0775
+    recurse: yes
+
+- name: Copy config
+  copy:
+    src: "{{ KubeConfigFile }}"
+    dest: "{{ UserKubeDir }}/config"
+    owner: "{{ user }}"
+    group: "{{ group }}"
+    mode: 0644
+    remote_src: yes
+
+#- name: Copy config to local file
+#  become: false
+#  copy:
+#    src: /etc/kubernetes/admin.conf
+#    dest: "{{ playbook_dir }}"
+#    remote_src: yes
+
+#    - name: Change kubeconfig file permission
+#      file:
+#        path: ""{{ UserKubeDir }}/config"
+#        owner: "{{ user }}"
+#        group: "{{ group }}"
+
+- name: Install calico pod network
+  become: false
+  command: kubectl apply -f {{ CalicoFile }}
+
+- name: Generate join command
+  command: kubeadm token create --print-join-command
+  register: join_command
+
+- name: Copy join command to local file
+  become: false
+  local_action: copy content="{{ join_command.stdout_lines[0] }}" dest="join-command"
+
+- name: Copy join command remote to local file
+  copy:
+    src: join-command
+    dest: .join-command
+    mode: u+rw,g-wx,o-rwx

@@ -1,0 +1,33 @@
+region: us-east-1
+AvailabilityZone: us-east-1a
+
+instanceType: t2.micro
+bucketS3: secrets-aws
+key_name: ssh-key.pem
+
+
+# k8s config
+NodeHostname : node
+tags : 
+instancetypeMaster: t2.medium
+instancetypeNode: t2.micro
+
+# ec2
+ami: ami-09e67e426f25ce0d7
+
+# Network
+availabilityZone: us-east-1a
+dnsSupport: true
+dnsHostNames: true
+vpcCIDRblock: "10.0.0.0/16"
+publicsCIDRblock: "10.0.1.0/24"
+privatesCIDRblock: "10.0.2.0/24"
+publicdestCIDRblock: "0.0.0.0/0"
+localdestCIDRblock: "10.0.0.0/16"
+ingressCIDRblock:
+  - "0.0.0.0/0"
+egressCIDRblock:
+  - "0.0.0.0/0"
+mapPublicIP: true
+ipAddress: 
+  - "0.0.0.0/0"

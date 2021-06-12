@@ -128,7 +128,7 @@ resource "aws_security_group" "allow_k8s" {
         },
         {
             cidr_blocks      = [
-                "191.220.70.83/32",
+                "0.0.0.0/0",
             ]
             description      = ""
             from_port        = 22
