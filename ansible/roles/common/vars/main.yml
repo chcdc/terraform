@@ -1,0 +1,23 @@
+---
+user: ubuntu
+
+docker_packages:
+  - docker-ce 
+  - docker-ce-cli 
+  - containerd.io
+
+kubernetes_packages:
+  - kubelet
+  - kubeadm
+  - kubectl
+
+packages:
+  - apt-transport-https
+  - ca-certificates
+  - curl
+  - gnupg-agent
+  - software-properties-common
+
+swapfile:
+  - swap
+  - none
