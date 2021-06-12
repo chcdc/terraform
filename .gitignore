@@ -1,9 +1,11 @@
 README.txt
-*.secrets/*
+.secrets/*
+secrets/*
 
 ### Terraform ###
 # Local .terraform directories
 **/.terraform/*
+.terraform*
 
 # .tfstate files
 *.tfstate
@@ -30,6 +32,8 @@ override.tf.json
 
 
 ### Vim ###
+.viminfo*
+
 # Swap
 [._]*.s[a-v][a-z]
 !*.svg  # comment out if you don't need vector files
