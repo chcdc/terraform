@@ -1,7 +1,9 @@
 README.txt
-.secrets/*
+.secrets/
 secrets/*
 *.zcompdump
+*join-command
+*.plan
 
 ### Terraform ###
 # Local .terraform directories

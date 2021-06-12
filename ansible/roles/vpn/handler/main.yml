@@ -1,0 +1,6 @@
+- name: "Start openvpn systemd service"
+  systemd:
+    name: openvpn@server
+    state: started
+    daemon_reload: yes
+    enabled: yes
