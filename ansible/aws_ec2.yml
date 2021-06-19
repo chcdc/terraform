@@ -10,6 +10,7 @@ filters:
 groups:
   master: "'master' in (tags|list)"
   node: "'node' in (tags|list)"
+  vpn: "'vpn' in (tags|list)"
 
 hostnames:
   - ip-address

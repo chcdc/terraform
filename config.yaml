@@ -3,7 +3,7 @@ AvailabilityZone: us-east-1a
 
 instanceType: t2.micro
 bucketS3: secrets-aws
-key_name: ssh-key.pem
+key_name: ssh-key
 
 
 # k8s config
