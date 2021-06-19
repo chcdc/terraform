@@ -42,8 +42,8 @@ resource "aws_spot_instance_request" "vpn-access" {
     provisioner "local-exec" {
         command = "aws ec2 create-tags --resources ${aws_spot_instance_request.vpn-access.spot_instance_id} --tags Key=Name,Value=${var.nameVPN} --region ${var.region}"
     }
-    #provisioner "local-exec" {
-    #    command = "sleep 20 && export ANSIBLE_CONFIG=${path.module}/ansible/ansible.cfg && ansible-playbook --private-key=${path.module}/secrets/${var.key_name}.pem --extra-vars 'node_ip=${aws_spot_instance_request.${var.nameVPN}.public_ip} hostname=${var.master_machine_name} ' ${path.module}/ansible/master.yml"
-    #}
+    provisioner "local-exec" {
+        command = "sleep 20 && export ANSIBLE_CONFIG=${path.module}/ansible/ansible.cfg && ansible-playbook --private-key=${path.module}/.secrets/${var.key_name}.pem ${path.module}/ansible/vpn.yml"
+    }
     wait_for_fulfillment            = true
 }

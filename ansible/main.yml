@@ -5,10 +5,10 @@
 - hosts: all:!VPNAccess
   roles:
     - common
-- hosts: master
+- hosts: master:!VPNAccess
   roles:
     - master
-- hosts: node
+- hosts: node:!VPNAccess
   roles:
     - node
 

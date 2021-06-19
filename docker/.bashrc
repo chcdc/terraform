@@ -56,9 +56,10 @@ aliases=(
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
-  bashmarks
+  ansible
   aws
+  bashmarks
+  git
 )
 
 source $OSH/oh-my-bash.sh
@@ -84,8 +85,6 @@ fi
 source /etc/environment
 # Scripts personal
 export PATH="$HOME/bin:$PATH"
-# Snap apps
-export PATH="/snap/bin:$PATH"
 
 # aws cli
 export PATH="$HOME/.local/bin/:$PATH"
@@ -185,11 +184,3 @@ httpHeaders () { /usr/bin/curl -I -L $@ ; }             # httpHeaders:      Grab
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
-
-docker-compose-restart(){
-        docker-compose stop $@
-        docker-compose rm -f -v $@
-        docker-compose create --force-recreate $@
-        docker-compose start $@
-}
-
