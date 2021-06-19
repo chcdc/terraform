@@ -45,7 +45,7 @@ resource "aws_spot_instance_request" "k8s-master" {
         command = "aws ec2 create-tags --resources ${aws_spot_instance_request.k8s-master.spot_instance_id} --tags Key=Name,Value=${var.master_machine_name} --region ${var.region}"
     }
     provisioner "local-exec" {
-        command = "sleep 20 && export ANSIBLE_CONFIG=${path.module}/ansible/ansible.cfg && ansible-playbook --private-key=${path.module}/secrets/${var.key_name}.pem --extra-vars 'node_ip=${aws_spot_instance_request.k8s-master.public_ip} hostname=${var.master_machine_name} ' ${path.module}/ansible/master.yml"
+        command = "sleep 20 && export ANSIBLE_CONFIG=${path.module}/ansible/ansible.cfg && ansible-playbook --private-key=${path.module}/.secrets/${var.key_name}.pem --extra-vars 'node_ip=${aws_spot_instance_request.k8s-master.public_ip} hostname=${var.master_machine_name} ' ${path.module}/ansible/master.yml"
     }
     wait_for_fulfillment            = true
 }
@@ -92,17 +92,18 @@ resource "aws_spot_instance_request" "k8s-Node" {
     }
 
     provisioner "local-exec" {
-      command = "sleep 30"
-    }
-    provisioner "local-exec" {
         command = "aws ec2 create-tags --resources ${aws_spot_instance_request.k8s-Node.spot_instance_id} --tags Key=Name,Value=${var.NodeHostname} --region ${var.region}"
     }    
-    wait_for_fulfillment            = true
 
     provisioner "local-exec" {
-        command = "sleep 20 && export ANSIBLE_CONFIG=${path.module}/ansible/ansible.cfg && ansible-playbook --private-key=${path.module}/secrets/${var.key_name}.pem --extra-vars 'node_ip=${aws_spot_instance_request.k8s-Node.public_ip} hostname=${var.NodeHostname} ' ${path.module}/ansible/node.yml"
+      command = "sleep 30"
     }
 
+    provisioner "local-exec" {
+        command = "sleep 20 && export ANSIBLE_CONFIG=${path.module}/ansible/ansible.cfg && ansible-playbook --private-key=${path.module}/.secrets/${var.key_name}.pem --extra-vars 'node_ip=${aws_spot_instance_request.k8s-Node.public_ip} hostname=${var.NodeHostname} ' ${path.module}/ansible/node.yml"
+    }
+
+    wait_for_fulfillment            = true
     depends_on = [aws_spot_instance_request.k8s-master]
 }
 

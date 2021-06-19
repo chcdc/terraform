@@ -8,6 +8,7 @@ main() {
 
   copyAWSConfig /host/home/.aws /infra/.aws/
   #SyncronizetfState state-tf-aws-useast1
+  source <(yq shell-completion bash)
   
   echo "==================================================================="
   echo

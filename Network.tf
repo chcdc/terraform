@@ -128,7 +128,7 @@ resource "aws_security_group" "allow_k8s" {
         },
         {
             cidr_blocks      = [
-                "191.220.70.83/32",
+                "0.0.0.0/0",
             ]
             description      = ""
             from_port        = 22
@@ -139,6 +139,19 @@ resource "aws_security_group" "allow_k8s" {
             self             = false
             to_port          = 22
         },
+        {
+            cidr_blocks      = [
+                "0.0.0.0/0",
+            ]
+            description      = "OpenVPN"
+            from_port        = 1190
+            ipv6_cidr_blocks = []
+            prefix_list_ids  = []
+            protocol         = "udp"
+            security_groups  = []
+            self             = false
+            to_port          = 1190
+        },        
         {
             cidr_blocks      = [
                 var.privatesCIDRblock,

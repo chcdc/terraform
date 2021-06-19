@@ -1,0 +1,114 @@
+- name: Update all packages to their latest version
+  apt:
+    name: "*"
+    state: latest
+    autoclean: yes
+    update_cache: yes
+    force_apt_get: yes
+    install_recommends: yes
+
+- name: Install packages that allow apt to be used over HTTPS
+  apt:
+    name: "{{ item }}"
+    state: present
+    update_cache: yes
+  loop: "{{ packages }}"
+
+- name: Add an apt signing key for Docker
+  apt_key:
+    url: https://download.docker.com/linux/ubuntu/gpg
+    state: present
+
+- name: Add apt repository for stable version
+  apt_repository:
+    repo: "{{ repoDocker }}"
+    state: present
+    update_cache: yes
+
+- name: Ensure group "docker" exists with correct gid
+  ansible.builtin.group:
+    name: docker
+    state: present
+    gid: 1750
+
+- name: Install docker and its dependecies
+  apt: 
+    name: "{{ item }}"
+    state: present
+    update_cache: yes
+  loop: "{{ docker_packages }}"
+  notify:
+    - docker status
+
+- name: Add user to docker group
+  user:
+    name: "{{ user }}"
+    group: docker
+
+#- name: Create a directory
+#  become: true
+#  file:
+#    path: "/etc/docker"
+#    state: directory
+#  delegate_to: localhost  
+
+- name: Configure Docker Daemon  
+  shell: |
+    sudo mkdir -p /etc/docker
+    cat <<EOF | sudo tee /etc/docker/daemon.json
+      {
+        "exec-opts": ["native.cgroupdriver=systemd"],
+        "log-driver": "json-file",
+        "log-opts": {
+          "max-size": "100m"
+        },
+      "storage-driver": "overlay2"
+      }
+    EOF
+
+- name: Restart Docker
+  service:
+    name: docker
+    daemon_reload: yes
+    state: restarted
+
+- name: Remove swapfile from /etc/fstab
+  mount:
+    name: "{{ item }}"
+    fstype: swap
+    state: absent
+  loop: "{{ swapfile }}"
+
+- name: Disable swap
+  command: swapoff -a
+  when: ansible_swaptotal_mb > 0
+
+- name: Add an apt signing key for Kubernetes
+  apt_key:
+    url: https://packages.cloud.google.com/apt/doc/apt-key.gpg
+    state: present
+
+- name: Adding apt repository for Kubernetes
+  apt_repository:
+    repo: deb https://apt.kubernetes.io/ kubernetes-xenial main
+    state: present
+    filename: kubernetes.list
+
+- name: Install Kubernetes binaries
+  apt: 
+    name: "{{ item }}"
+    state: present
+    update_cache: yes
+  loop: "{{ kubernetes_packages }}"
+
+- name: Configure node ip
+  lineinfile:
+    path: /etc/default/kubelet
+    line: KUBELET_EXTRA_ARGS=--node-ip={{ ansible_default_ipv4.address }}
+    create: yes
+
+- name: Restart kubelet
+  service:
+    name: kubelet
+    daemon_reload: yes
+    state: restarted

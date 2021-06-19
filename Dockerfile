@@ -21,7 +21,7 @@ RUN apt -qq update
 RUN apt install -y bash-completion unzip gettext jq \
                    vim watch zsh wget inotify-tools dnsutils \
                    sudo rsync uuid-runtime git curl openssh-server \
-                   ca-certificates apt-transport-https \
+                   ca-certificates apt-transport-https openvpn \
                    python3.8 python3-distutils nmap notify-osd \
                    --no-install-recommends
 
@@ -40,7 +40,7 @@ RUN curl -sLO https://get.helm.sh/helm-v3.1.1-linux-amd64.tar.gz \
 
 # YQ
 RUN wget -q https://github.com/mikefarah/yq/releases/download/v4.9.5/yq_linux_amd64 -O /usr/bin/yq &&\
-    chmod +x /usr/bin/yq
+    chmod +x /usr/bin/yq 
 
 # PYTHON
 RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python3 get-pip.py
@@ -77,12 +77,13 @@ WORKDIR ${HOME_DIR}
 
 USER ${USER}
 
-# ANSIBLE
-RUN pip3 install paramiko ansible==2.10 requests boto3==1.17.92 botocore==1.20.92
+# PYTHON PACKAGES
+COPY --chown=${USER}:${USER} docker/requirements.txt /tmp/requirements.txt
+RUN export PATH=/${USER}/.local/bin:$PATH
+RUN pip3 install -r /tmp/requirements.txt
 
 # OH MY BASH
 RUN bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)"
-
 
 COPY --chown=${USER}:${USER} docker/.bashrc ${HOME_DIR}/.bashrc
 COPY --chown=${USER}:${USER} docker/aliases-kubectl.sh /alias/aliases-kubectl.sh

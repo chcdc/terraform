@@ -4,10 +4,11 @@ OS_USER=infra
 INFRASTRUCTURE_VOLUME_PATH=/copy/infrastructure:ro
 CONFIG_VOLUME_PATH=/copy/config:ro
 
-docker build . -t infra-terraform \
+docker build . -t chcdc/infra-terraform \
   --build-arg USER_ID=$(id -u) \
   --build-arg GROUP_ID=$(id -g)
 
+#docker push chcdc/infra-terraform
 #docker rmi -f $(docker images -f "dangling=true" -q)
 
 docker run --rm -it --name infra-$(date +%F--%H-%M-%S)--$(uuidgen) \
