@@ -18,7 +18,7 @@ RUN groupadd -g ${GROUP_ID} ${USER} && \
   chown ${USER} ${HOME_DIR}
 
 RUN apt -qq update
-RUN apt install -y bash-completion unzip gettext jq \
+RUN apt install -y bash-completion unzip gettext netcat \
                    vim watch zsh wget inotify-tools dnsutils \
                    sudo rsync uuid-runtime git curl openssh-server \
                    ca-certificates apt-transport-https openvpn \
@@ -85,8 +85,15 @@ RUN pip3 install -r /tmp/requirements.txt
 # OH MY BASH
 RUN bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)"
 
+RUN git clone https://github.com/powerline/fonts.git --depth=1 \
+    && cd fonts \
+    && ./install.sh \
+    && cd .. \
+    && rm -rf fonts
+
 COPY --chown=${USER}:${USER} docker/.bashrc ${HOME_DIR}/.bashrc
 COPY --chown=${USER}:${USER} docker/aliases-kubectl.sh /alias/aliases-kubectl.sh
+COPY --chown=${USER}:${USER} docker/aliases-misc.sh /alias/aliases-misc.sh
 COPY --chown=${USER}:${USER} docker/entrypoint.sh /entrypoint
 
 ENTRYPOINT /entrypoint
