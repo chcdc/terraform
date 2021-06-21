@@ -93,3 +93,5 @@
   template:
     src: openvpn_config.j2
     dest: "{{ openvpn_dir }}/server.conf"
+  notify:
+    - Start openvpn systemd service

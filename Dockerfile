@@ -18,7 +18,7 @@ RUN groupadd -g ${GROUP_ID} ${USER} && \
   chown ${USER} ${HOME_DIR}
 
 RUN apt -qq update
-RUN apt install -y bash-completion unzip gettext netcat \
+RUN apt install -y bash-completion unzip gettext netcat jq \
                    vim watch zsh wget inotify-tools dnsutils \
                    sudo rsync uuid-runtime git curl openssh-server \
                    ca-certificates apt-transport-https openvpn \

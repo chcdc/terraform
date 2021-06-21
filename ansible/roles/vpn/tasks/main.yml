@@ -1,6 +1,3 @@
-- name: Include Variables
-  include_vars: main.yml
-
 - name: Prepare System and Install packages
   tags: prepare_system
   become: yes

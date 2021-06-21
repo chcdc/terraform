@@ -16,7 +16,7 @@ key_name=$(yq e '.key_name' $CONFIG_FILE)
 main() {
   echo
   echo -e "${COLOR_BLUE}===================================================================${NC}"
-  echo -e "#################################################################################"
+  echo -e "${COLOR_RED}===================================================================${NC}"
 }
 
 
@@ -69,7 +69,8 @@ getprices(){
     echo -e "Prices:\n"
     echo -e "t2.micro:\t\t$spotpriceNode"
     echo -e "t2.medium:\t\t$spotpriceMaster\n"
-    echo -e "==================================================================="
+    echo -e "${COLOR_BLUE}===================================================================${NC}"
+    echo -e "${COLOR_RED}===================================================================${NC}"
     echo TF_VAR_spotpriceNode=$spotpriceNode >> .env
     echo TF_VAR_spotpriceMaster=$spotpriceMaster >> .env
 }
