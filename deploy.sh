@@ -3,6 +3,7 @@
 # Colors
 COLOR_RED='\033[0;31m'
 COLOR_GREEN='\033[0;32m'
+COLOR_YELLOW='\033[0;33m'
 COLOR_BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
@@ -16,7 +17,7 @@ key_name=$(yq e '.key_name' $CONFIG_FILE)
 main() {
   echo
   echo -e "${COLOR_BLUE}===================================================================${NC}"
-  echo -e "${COLOR_RED}===================================================================${NC}"
+  echo -e "${COLOR_YELLOW}===================================================================${NC}"
 }
 
 
@@ -70,7 +71,7 @@ getprices(){
     echo -e "t2.micro:\t\t$spotpriceNode"
     echo -e "t2.medium:\t\t$spotpriceMaster\n"
     echo -e "${COLOR_BLUE}===================================================================${NC}"
-    echo -e "${COLOR_RED}===================================================================${NC}"
+    echo -e "${COLOR_YELLOW}===================================================================${NC}"
     echo TF_VAR_spotpriceNode=$spotpriceNode >> .env
     echo TF_VAR_spotpriceMaster=$spotpriceMaster >> .env
 }

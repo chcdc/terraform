@@ -6,6 +6,7 @@ USER=infra
 main() {
   echo "==================================================================="
   echo -e "Initialize.."
+  copyConfigs /copy/infrastructure/.secrets/infracost /infra/.config/
   copyAWSConfig /host/home/.aws /infra/.aws/
   #SyncronizetfState state-tf-aws-useast1
   source <(yq shell-completion bash)
@@ -16,6 +17,14 @@ main() {
 copyAWSConfig(){
     HOMEDIR=$1
     cp -r $HOMEDIR ~/.aws/
+    echo -e " - ${1} directory will be copied"
+}
+
+copyConfigs(){
+    DIR=$1
+    mkdir -p ~/.config/
+    cp -r $DIR ~/.config/
+    echo -e " - ${1} directory will be copied"
 }
 
 SyncronizetfState(){

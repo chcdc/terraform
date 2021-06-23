@@ -18,11 +18,11 @@ RUN groupadd -g ${GROUP_ID} ${USER} && \
   chown ${USER} ${HOME_DIR}
 
 RUN apt -qq update
-RUN apt install -y bash-completion unzip gettext netcat jq \
-                   vim watch zsh wget inotify-tools dnsutils \
-                   sudo rsync uuid-runtime git curl openssh-server \
-                   ca-certificates apt-transport-https openvpn \
-                   python3.8 python3-distutils nmap notify-osd \
+RUN apt install -y bash-completion jq git curl sudo\
+                   vim watch wget unzip gettext \
+                   rsync uuid-runtime openssh-server \
+                   ca-certificates apt-transport-https \
+                   python3.8 python3-distutils openvpn\
                    --no-install-recommends
 
 RUN mkdir -p /completion /alias
@@ -70,6 +70,9 @@ RUN curl -k -LO https://dl.k8s.io/release/v1.21.1/bin/linux/amd64/kubectl \
 
 RUN kubectl completion bash > /completion/kubectl.bash
 RUN kubectl completion zsh > /completion/kubectl.zsh
+
+# InfraCost
+RUN curl -fsSL https://raw.githubusercontent.com/infracost/infracost/master/scripts/install.sh | sh
 
 RUN rm -rf /tmp/*
 
