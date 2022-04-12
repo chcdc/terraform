@@ -30,5 +30,6 @@ jobs:
         uses: bridgecrewio/checkov-action@master
         with:
           directory: .
-          framework: terraform 
+          framework: terraform
+    needs: [validate]
 
