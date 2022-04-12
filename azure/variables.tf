@@ -3,11 +3,11 @@ variable "location" {
 }
 
 variable "machine" {
-    default = "AppVM"
+  default = "AppVM"
 }
 
 variable "tags" {
-    default = "homolog"
+  default = "homolog"
 }
 
 variable "AdminUser" {
