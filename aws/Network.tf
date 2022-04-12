@@ -1,3 +1,10 @@
+resource "aws_flow_log" "flow_log" {
+  iam_role_arn    = "arn"
+  log_destination = "log"
+  traffic_type    = "ALL"
++ vpc_id          = aws_vpc.k8s-vpc.id
+}
+
 resource "aws_vpc" "k8s-vpc" {
   assign_generated_ipv6_cidr_block = false
   cidr_block                       = var.vpcCIDRblock
