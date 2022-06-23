@@ -1,0 +1,1299 @@
+[90mWed, 22 Jun 2022 20:33:26 -0300[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:155[0m[36m >[0m Enabling the capture of log-library logs as ithe _capturelog flag was detected
+[90mWed, 22 Jun 2022 20:33:26 -0300[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:188[0m[36m >[0m Logging Started. Root Logger Set to level debug
+[90mWed, 22 Jun 2022 20:33:38 -0300[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:155[0m[36m >[0m Enabling the capture of log-library logs as ithe _capturelog flag was detected
+[90mWed, 22 Jun 2022 20:33:38 -0300[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:188[0m[36m >[0m Logging Started. Root Logger Set to level debug
+[90mWed, 22 Jun 2022 20:33:50 -0300[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:155[0m[36m >[0m Enabling the capture of log-library logs as ithe _capturelog flag was detected
+[90mWed, 22 Jun 2022 20:33:50 -0300[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:188[0m[36m >[0m Logging Started. Root Logger Set to level debug
+[90mWed, 22 Jun 2022 20:33:58 -0300[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:155[0m[36m >[0m Enabling the capture of log-library logs as ithe _capturelog flag was detected
+[90mWed, 22 Jun 2022 20:33:58 -0300[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:188[0m[36m >[0m Logging Started. Root Logger Set to level debug
+2022/06/22 20:33:58 [DEBUG] setting computed for "unused" from ComputedKeys
+2022/06/22 20:33:58 >>>>>>>>>> REQUEST:
+GET /api2/json/cluster/nextid HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A6E6::Dc8CtgSUlMRm7FkJPqQTmd5XYBbQ9qQExK2pX+EEA062gg1hL3X92QWctgekeFws1oxL/Z0qnWx91TzZZRak25OLbyBp8qNoh6S+jmkAmLXt9lTsxSEXX7wYd9tUu+q+2epStYeEFhWB0SreevWlXdbDtFRIHneCIhjZBYudCdUi9HWSrqRqjR/y0wlRxujMfcyZdq11424HafXOJZsR9gfzU+M34F8ejSAOd7HkpEw+5xnXfvQTxCtehv1rQuNTd5KvaxuEWee3E73FFXb1ng0PLgs1uBNyVDhUkmFhN1uzlR+286WCMDgo9yONCFFswMLCsLAmHesWKi+EgzdhHg==
+Csrfpreventiontoken: 62B3A6E6:lpsuB1OUuW/HxSJSiiOCFuD6IHCGM71B3gR3vcVBwHE
+Accept-Encoding: gzip
+
+2022/06/22 20:33:58 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 14
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:33:58 GMT
+Expires: Wed, 22 Jun 2022 23:33:58 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":"108"}
+2022/06/22 20:33:58 >>>>>>>>>> REQUEST:
+POST /api2/json/nodes/pve/lxc HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Content-Length: 343
+Accept: application/json
+Content-Type: application/x-www-form-urlencoded
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A6E6::Dc8CtgSUlMRm7FkJPqQTmd5XYBbQ9qQExK2pX+EEA062gg1hL3X92QWctgekeFws1oxL/Z0qnWx91TzZZRak25OLbyBp8qNoh6S+jmkAmLXt9lTsxSEXX7wYd9tUu+q+2epStYeEFhWB0SreevWlXdbDtFRIHneCIhjZBYudCdUi9HWSrqRqjR/y0wlRxujMfcyZdq11424HafXOJZsR9gfzU+M34F8ejSAOd7HkpEw+5xnXfvQTxCtehv1rQuNTd5KvaxuEWee3E73FFXb1ng0PLgs1uBNyVDhUkmFhN1uzlR+286WCMDgo9yONCFFswMLCsLAmHesWKi+EgzdhHg==
+Csrfpreventiontoken: 62B3A6E6:lpsuB1OUuW/HxSJSiiOCFuD6IHCGM71B3gR3vcVBwHE
+Accept-Encoding: gzip
+
+arch=amd64&cmode=tty&console=1&cores=1&cpulimit=0&cpuunits=1024&hostname=lxc-basic&memory=512&net0=ip%3Ddhcp%2Cname%3Deth0%2Cbridge%3Dvmbr0&onboot=0&ostemplate=local%3Avztmpl%2Fubuntu-21.10-standard_21.10-1_amd64.tar.gz.zst&password=BasicLXCContainer&protection=0&rootfs=local-zfs%3A8&start=0&storage=local&swap=0&tty=2&unprivileged=1&vmid=108
+2022/06/22 20:34:01 <<<<<<<<<< RESULT:
+HTTP/1.1 500 unable to parse directory volume name 'vztmpl/ubuntu-21.10-standard_21.10-1_amd64.tar.gz.zst'
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:34:01 GMT
+Expires: Wed, 22 Jun 2022 23:34:01 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+[90mWed, 22 Jun 2022 20:34:43 -0300[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:155[0m[36m >[0m Enabling the capture of log-library logs as ithe _capturelog flag was detected
+[90mWed, 22 Jun 2022 20:34:43 -0300[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:188[0m[36m >[0m Logging Started. Root Logger Set to level debug
+[90mWed, 22 Jun 2022 20:34:45 -0300[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:155[0m[36m >[0m Enabling the capture of log-library logs as ithe _capturelog flag was detected
+[90mWed, 22 Jun 2022 20:34:45 -0300[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:188[0m[36m >[0m Logging Started. Root Logger Set to level debug
+2022/06/22 20:34:45 [DEBUG] setting computed for "unused" from ComputedKeys
+2022/06/22 20:34:45 >>>>>>>>>> REQUEST:
+GET /api2/json/cluster/nextid HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A715::iyxR4zmI1aPvfSrWIiyfSzLUoJvWljWjmSfwFpBmbLYzYqT9XyB8gttivybgdXc2Q+ulgV5kUIPyhqsEGIl3Sr4FFFNMW4a56YpDPCAeKQ1G8qKw0TAG0TBYtUgvAyFHwBTPqGa+Ys7K/GHTifw6zxYXtITdenqq18M2vYZfxmhDQSBRwxmLeCqI6sv9HYss8dY91mySEPrawJj0UwQwIDvACQxq+6qcySggVbbo8p5EqRVCPmGmCkssSubE0ctOjKT+CdcXYtZtqVCcUydY8HoGnied3arA+ZfJMbDBlTZ71u2F92wMVhpEPSBHl91WySKtOotPgxjOjOrTzynQ3w==
+Csrfpreventiontoken: 62B3A715:vWE4dvO87Tvl67ZlUlJFD9HYDb+cXDQnGu0/AJyUPYU
+Accept-Encoding: gzip
+
+2022/06/22 20:34:45 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 14
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:34:45 GMT
+Expires: Wed, 22 Jun 2022 23:34:45 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":"108"}
+2022/06/22 20:34:45 >>>>>>>>>> REQUEST:
+POST /api2/json/nodes/pve/lxc HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Content-Length: 345
+Accept: application/json
+Content-Type: application/x-www-form-urlencoded
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A715::iyxR4zmI1aPvfSrWIiyfSzLUoJvWljWjmSfwFpBmbLYzYqT9XyB8gttivybgdXc2Q+ulgV5kUIPyhqsEGIl3Sr4FFFNMW4a56YpDPCAeKQ1G8qKw0TAG0TBYtUgvAyFHwBTPqGa+Ys7K/GHTifw6zxYXtITdenqq18M2vYZfxmhDQSBRwxmLeCqI6sv9HYss8dY91mySEPrawJj0UwQwIDvACQxq+6qcySggVbbo8p5EqRVCPmGmCkssSubE0ctOjKT+CdcXYtZtqVCcUydY8HoGnied3arA+ZfJMbDBlTZ71u2F92wMVhpEPSBHl91WySKtOotPgxjOjOrTzynQ3w==
+Csrfpreventiontoken: 62B3A715:vWE4dvO87Tvl67ZlUlJFD9HYDb+cXDQnGu0/AJyUPYU
+Accept-Encoding: gzip
+
+arch=amd64&cmode=tty&console=1&cores=1&cpulimit=0&cpuunits=1024&hostname=lxc-basic&memory=512&net0=ip%3Ddhcp%2Cbridge%3Dvmbr0%2Cname%3Deth0&onboot=0&ostemplate=hdd-img%3Avztmpl%2Fubuntu-21.10-standard_21.10-1_amd64.tar.gz.zst&password=BasicLXCContainer&protection=0&rootfs=local-zfs%3A8&start=0&storage=local&swap=0&tty=2&unprivileged=1&vmid=108
+2022/06/22 20:34:45 <<<<<<<<<< RESULT:
+HTTP/1.1 500 unable to parse directory volume name 'vztmpl/ubuntu-21.10-standard_21.10-1_amd64.tar.gz.zst'
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:34:45 GMT
+Expires: Wed, 22 Jun 2022 23:34:45 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+[90mWed, 22 Jun 2022 20:36:29 -0300[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:155[0m[36m >[0m Enabling the capture of log-library logs as ithe _capturelog flag was detected
+[90mWed, 22 Jun 2022 20:36:29 -0300[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:188[0m[36m >[0m Logging Started. Root Logger Set to level debug
+[90mWed, 22 Jun 2022 20:36:31 -0300[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:155[0m[36m >[0m Enabling the capture of log-library logs as ithe _capturelog flag was detected
+[90mWed, 22 Jun 2022 20:36:31 -0300[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:188[0m[36m >[0m Logging Started. Root Logger Set to level debug
+2022/06/22 20:36:31 [DEBUG] setting computed for "unused" from ComputedKeys
+2022/06/22 20:36:31 >>>>>>>>>> REQUEST:
+GET /api2/json/cluster/nextid HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A77F::An7CeecDLu9eeU11qCQnt0imYBJcYLBskcwgKN4fOXM9iTOZJbaO565Ka58RPdWKGtiG+62oYM95+/XuitKi6nPPepSIQDKa4vuxO29gneytz8rFS3NmqGcvPHU0tiPIJ5HcYCg4EOYgXR1Xfpq5GWCne+Edqt/p42ArlWJmP3w4lz92biF1psUR/TYxjQdUGEU+IeqQXz78MJkOWeYN9er2m7FpYGnG2gjIljqLmtUqm4nEzlmY9zEMLaZlC04Foe+olcKvF4AeyVsTkfR+s0QLjadRev2hM+Yk5GOTmWBGZxxJnpqzLNbEG0BBam+NBvccun0RKjlMoUUMF2pcZA==
+Csrfpreventiontoken: 62B3A77F:dXBp6Zsgmejb5a2oTcOSJiUMNyJ3k5AFtI+t40Rsss8
+Accept-Encoding: gzip
+
+2022/06/22 20:36:31 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 14
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:36:31 GMT
+Expires: Wed, 22 Jun 2022 23:36:31 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":"108"}
+2022/06/22 20:36:31 >>>>>>>>>> REQUEST:
+POST /api2/json/nodes/pve/lxc HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Content-Length: 343
+Accept: application/json
+Content-Type: application/x-www-form-urlencoded
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A77F::An7CeecDLu9eeU11qCQnt0imYBJcYLBskcwgKN4fOXM9iTOZJbaO565Ka58RPdWKGtiG+62oYM95+/XuitKi6nPPepSIQDKa4vuxO29gneytz8rFS3NmqGcvPHU0tiPIJ5HcYCg4EOYgXR1Xfpq5GWCne+Edqt/p42ArlWJmP3w4lz92biF1psUR/TYxjQdUGEU+IeqQXz78MJkOWeYN9er2m7FpYGnG2gjIljqLmtUqm4nEzlmY9zEMLaZlC04Foe+olcKvF4AeyVsTkfR+s0QLjadRev2hM+Yk5GOTmWBGZxxJnpqzLNbEG0BBam+NBvccun0RKjlMoUUMF2pcZA==
+Csrfpreventiontoken: 62B3A77F:dXBp6Zsgmejb5a2oTcOSJiUMNyJ3k5AFtI+t40Rsss8
+Accept-Encoding: gzip
+
+arch=amd64&cmode=tty&console=1&cores=1&cpulimit=0&cpuunits=1024&hostname=lxc-basic&memory=512&net0=bridge%3Dvmbr0%2Cip%3Ddhcp%2Cname%3Deth0&onboot=0&ostemplate=local%3Avztmpl%2Fubuntu-21.10-standard_21.10-1_amd64.tar.gz.zst&password=BasicLXCContainer&protection=0&rootfs=local-zfs%3A8&start=0&storage=local&swap=0&tty=2&unprivileged=1&vmid=108
+2022/06/22 20:36:31 <<<<<<<<<< RESULT:
+HTTP/1.1 500 unable to parse directory volume name 'vztmpl/ubuntu-21.10-standard_21.10-1_amd64.tar.gz.zst'
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:36:31 GMT
+Expires: Wed, 22 Jun 2022 23:36:31 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+[90mWed, 22 Jun 2022 20:37:09 -0300[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:155[0m[36m >[0m Enabling the capture of log-library logs as ithe _capturelog flag was detected
+[90mWed, 22 Jun 2022 20:37:09 -0300[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:188[0m[36m >[0m Logging Started. Root Logger Set to level debug
+[90mWed, 22 Jun 2022 20:37:11 -0300[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:155[0m[36m >[0m Enabling the capture of log-library logs as ithe _capturelog flag was detected
+[90mWed, 22 Jun 2022 20:37:11 -0300[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:188[0m[36m >[0m Logging Started. Root Logger Set to level debug
+2022/06/22 20:37:11 [DEBUG] setting computed for "unused" from ComputedKeys
+2022/06/22 20:37:11 >>>>>>>>>> REQUEST:
+GET /api2/json/cluster/nextid HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A7A7::JcHk3H7n2TLlFsKUI3XgCTW568krF6++CaoFY9mYYrgIdpcBUG1NoJyH241szJrbEVSke3LnJVkAZ5Q25YtDW7wfL9FETGlZ5j8VFsmOLl+VO+TgqDD7TPKoBj1Tw9gj0AcMD77if1sbrHc6XmbYYKwwVFSpquFxjL+ppOuK8RtbjCWu4iB9OloHGQ5+ELGivTQ6IeL07gKjojDKlhxeHRvUbHi+QJagkD1Rf9hZfhUO9zcuzWe4svv+BYPviNM7IHtPfbZFWRr4aKUsg0OwIVGRZHEBlEoSp8A9frIBNa1FyAWRxdcpv3LBUs8rjqxsox/ijXpbnBU4dGl2GaC8uA==
+Csrfpreventiontoken: 62B3A7A7:log4ZHfZGa4wAOrRFqEWRKBhxs9pmUcLp57LIcLbYLo
+Accept-Encoding: gzip
+
+2022/06/22 20:37:11 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 14
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:37:11 GMT
+Expires: Wed, 22 Jun 2022 23:37:11 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":"108"}
+2022/06/22 20:37:11 >>>>>>>>>> REQUEST:
+POST /api2/json/nodes/pve/lxc HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Content-Length: 339
+Accept: application/json
+Content-Type: application/x-www-form-urlencoded
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A7A7::JcHk3H7n2TLlFsKUI3XgCTW568krF6++CaoFY9mYYrgIdpcBUG1NoJyH241szJrbEVSke3LnJVkAZ5Q25YtDW7wfL9FETGlZ5j8VFsmOLl+VO+TgqDD7TPKoBj1Tw9gj0AcMD77if1sbrHc6XmbYYKwwVFSpquFxjL+ppOuK8RtbjCWu4iB9OloHGQ5+ELGivTQ6IeL07gKjojDKlhxeHRvUbHi+QJagkD1Rf9hZfhUO9zcuzWe4svv+BYPviNM7IHtPfbZFWRr4aKUsg0OwIVGRZHEBlEoSp8A9frIBNa1FyAWRxdcpv3LBUs8rjqxsox/ijXpbnBU4dGl2GaC8uA==
+Csrfpreventiontoken: 62B3A7A7:log4ZHfZGa4wAOrRFqEWRKBhxs9pmUcLp57LIcLbYLo
+Accept-Encoding: gzip
+
+arch=amd64&cmode=tty&console=1&cores=1&cpulimit=0&cpuunits=1024&hostname=lxc-basic&memory=512&net0=ip%3Ddhcp%2Cname%3Deth0%2Cbridge%3Dvmbr0&onboot=0&ostemplate=local%3Avztmpl%2Fubuntu-22.04-standard_22.04-1_amd64.tar.gz&password=BasicLXCContainer&protection=0&rootfs=local-zfs%3A8&start=0&storage=local&swap=0&tty=2&unprivileged=1&vmid=108
+2022/06/22 20:37:11 <<<<<<<<<< RESULT:
+HTTP/1.1 500 storage 'local-zfs' does not exist
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:37:11 GMT
+Expires: Wed, 22 Jun 2022 23:37:11 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+[90mWed, 22 Jun 2022 20:37:40 -0300[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:155[0m[36m >[0m Enabling the capture of log-library logs as ithe _capturelog flag was detected
+[90mWed, 22 Jun 2022 20:37:40 -0300[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:188[0m[36m >[0m Logging Started. Root Logger Set to level debug
+[90mWed, 22 Jun 2022 20:37:44 -0300[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:155[0m[36m >[0m Enabling the capture of log-library logs as ithe _capturelog flag was detected
+[90mWed, 22 Jun 2022 20:37:44 -0300[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:188[0m[36m >[0m Logging Started. Root Logger Set to level debug
+2022/06/22 20:37:44 [DEBUG] setting computed for "unused" from ComputedKeys
+2022/06/22 20:37:44 >>>>>>>>>> REQUEST:
+GET /api2/json/cluster/nextid HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A7C8::OjD2Bmd+4ABbWUM0DoIKZwizlZZuhQahX0oVda+EGv9Lc/AJitM7yRabEn8LauQ7t48LzWMqiNXMCPDIaLC1kt5JqrSC6iwUXsDewzPqlz3mpRyp49NJNTUkuZMwDBcdPFtAc/Br0PmeqNJ2J+XK5fVSl1l2rXXRRTXkyY6aAGdgCp94+EQg4pTtjmsR5wzMPl4BdgBHIV9GgLSfqx3ylj7T90ErSef33DO6CG+vcWXhzfS8AXL9VcpzWtMgeSt8lDxP1QDTyoOE2fIDOt5UxED5YJcUdRHNZZC6+mepvwf1PGSXhAxfW0EHWXfKYc1dncbU9DGQdtBIZ8EFsmPQWg==
+Csrfpreventiontoken: 62B3A7C8:E2C9U0BTreQKsyMZ9uOCrmhNsy4EswYdCebG+OPSs5o
+Accept-Encoding: gzip
+
+2022/06/22 20:37:44 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 14
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:37:44 GMT
+Expires: Wed, 22 Jun 2022 23:37:44 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":"108"}
+2022/06/22 20:37:44 >>>>>>>>>> REQUEST:
+POST /api2/json/nodes/pve/lxc HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Content-Length: 335
+Accept: application/json
+Content-Type: application/x-www-form-urlencoded
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A7C8::OjD2Bmd+4ABbWUM0DoIKZwizlZZuhQahX0oVda+EGv9Lc/AJitM7yRabEn8LauQ7t48LzWMqiNXMCPDIaLC1kt5JqrSC6iwUXsDewzPqlz3mpRyp49NJNTUkuZMwDBcdPFtAc/Br0PmeqNJ2J+XK5fVSl1l2rXXRRTXkyY6aAGdgCp94+EQg4pTtjmsR5wzMPl4BdgBHIV9GgLSfqx3ylj7T90ErSef33DO6CG+vcWXhzfS8AXL9VcpzWtMgeSt8lDxP1QDTyoOE2fIDOt5UxED5YJcUdRHNZZC6+mepvwf1PGSXhAxfW0EHWXfKYc1dncbU9DGQdtBIZ8EFsmPQWg==
+Csrfpreventiontoken: 62B3A7C8:E2C9U0BTreQKsyMZ9uOCrmhNsy4EswYdCebG+OPSs5o
+Accept-Encoding: gzip
+
+arch=amd64&cmode=tty&console=1&cores=1&cpulimit=0&cpuunits=1024&hostname=lxc-basic&memory=512&net0=ip%3Ddhcp%2Cname%3Deth0%2Cbridge%3Dvmbr0&onboot=0&ostemplate=local%3Avztmpl%2Fubuntu-22.04-standard_22.04-1_amd64.tar.gz&password=BasicLXCContainer&protection=0&rootfs=local%3A8&start=0&storage=local&swap=0&tty=2&unprivileged=1&vmid=108
+2022/06/22 20:37:44 <<<<<<<<<< RESULT:
+HTTP/1.1 400 Parameter verification failed.
+Connection: close
+Content-Length: 91
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:37:44 GMT
+Expires: Wed, 22 Jun 2022 23:37:44 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"errors":{"storage":"storage 'local' does not support container directories"},"data":null}
+[90mWed, 22 Jun 2022 20:41:33 -0300[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:155[0m[36m >[0m Enabling the capture of log-library logs as ithe _capturelog flag was detected
+[90mWed, 22 Jun 2022 20:41:33 -0300[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:188[0m[36m >[0m Logging Started. Root Logger Set to level debug
+[90mWed, 22 Jun 2022 20:41:34 -0300[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:155[0m[36m >[0m Enabling the capture of log-library logs as ithe _capturelog flag was detected
+[90mWed, 22 Jun 2022 20:41:34 -0300[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:188[0m[36m >[0m Logging Started. Root Logger Set to level debug
+2022/06/22 20:41:34 [DEBUG] setting computed for "unused" from ComputedKeys
+2022/06/22 20:41:34 >>>>>>>>>> REQUEST:
+GET /api2/json/cluster/nextid HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A8AE::HjRahqiaaW4HzZA0fsm+gKLhUT3QQ8jVGv/kt3+zmfRhTL6spGjZoEHzztGpqK+fbhT3xzwQuMOC2IxVPJ6tozg5BIB0ENEpG+eaFi2/TDT46lP10GHYJfIVrbGaC05KZc9qUVe1NFU0f28QWZEvPPqt0oYqo4w/DiAlECZ8+M0pkckVXn0pog2tIvJR9YwxtTr1wDu/XA4HwyZb0bEYv6rkILS96uyQucItAQE0AstPf+hqwYF8N1sfLkVNFvuU8VZjaMujpOsgkiIadeM1p6CBiUJ1eJp5vK/Nlwc2i2CrwY65+epEslD2+9+40LkJ4bAB+Ndip6NsJIi6H1DT2A==
+Csrfpreventiontoken: 62B3A8AE:R9d3bDWFJ5kv6Bi/Vs8Vvx3ZbGrl2UUjpeN7pbb+W5s
+Accept-Encoding: gzip
+
+2022/06/22 20:41:34 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 14
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:41:34 GMT
+Expires: Wed, 22 Jun 2022 23:41:34 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":"108"}
+2022/06/22 20:41:34 >>>>>>>>>> REQUEST:
+POST /api2/json/nodes/pve/lxc HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Content-Length: 339
+Accept: application/json
+Content-Type: application/x-www-form-urlencoded
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A8AE::HjRahqiaaW4HzZA0fsm+gKLhUT3QQ8jVGv/kt3+zmfRhTL6spGjZoEHzztGpqK+fbhT3xzwQuMOC2IxVPJ6tozg5BIB0ENEpG+eaFi2/TDT46lP10GHYJfIVrbGaC05KZc9qUVe1NFU0f28QWZEvPPqt0oYqo4w/DiAlECZ8+M0pkckVXn0pog2tIvJR9YwxtTr1wDu/XA4HwyZb0bEYv6rkILS96uyQucItAQE0AstPf+hqwYF8N1sfLkVNFvuU8VZjaMujpOsgkiIadeM1p6CBiUJ1eJp5vK/Nlwc2i2CrwY65+epEslD2+9+40LkJ4bAB+Ndip6NsJIi6H1DT2A==
+Csrfpreventiontoken: 62B3A8AE:R9d3bDWFJ5kv6Bi/Vs8Vvx3ZbGrl2UUjpeN7pbb+W5s
+Accept-Encoding: gzip
+
+arch=amd64&cmode=tty&console=1&cores=1&cpulimit=0&cpuunits=1024&hostname=lxc-basic&memory=512&net0=name%3Deth0%2Cbridge%3Dvmbr0%2Cip%3Ddhcp&onboot=0&ostemplate=local%3Avztmpl%2Fubuntu-22.04-standard_22.04-1_amd64.tar.gz&password=BasicLXCContainer&protection=0&rootfs=local-lvm%3A8&start=0&storage=local&swap=0&tty=2&unprivileged=1&vmid=108
+2022/06/22 20:41:35 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 79
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:41:35 GMT
+Expires: Wed, 22 Jun 2022 23:41:35 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":"UPID:pve:003A70A4:0C68CF26:62B3A8AF:vzcreate:108:terraform-prov@pve:"}
+2022/06/22 20:41:35 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/tasks/UPID:pve:003A70A4:0C68CF26:62B3A8AF:vzcreate:108:terraform-prov@pve:/status HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A8AE::HjRahqiaaW4HzZA0fsm+gKLhUT3QQ8jVGv/kt3+zmfRhTL6spGjZoEHzztGpqK+fbhT3xzwQuMOC2IxVPJ6tozg5BIB0ENEpG+eaFi2/TDT46lP10GHYJfIVrbGaC05KZc9qUVe1NFU0f28QWZEvPPqt0oYqo4w/DiAlECZ8+M0pkckVXn0pog2tIvJR9YwxtTr1wDu/XA4HwyZb0bEYv6rkILS96uyQucItAQE0AstPf+hqwYF8N1sfLkVNFvuU8VZjaMujpOsgkiIadeM1p6CBiUJ1eJp5vK/Nlwc2i2CrwY65+epEslD2+9+40LkJ4bAB+Ndip6NsJIi6H1DT2A==
+Csrfpreventiontoken: 62B3A8AE:R9d3bDWFJ5kv6Bi/Vs8Vvx3ZbGrl2UUjpeN7pbb+W5s
+Accept-Encoding: gzip
+
+2022/06/22 20:41:35 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 233
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:41:35 GMT
+Expires: Wed, 22 Jun 2022 23:41:35 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"node":"pve","type":"vzcreate","pid":3829924,"pstart":208195366,"user":"terraform-prov@pve","id":"108","upid":"UPID:pve:003A70A4:0C68CF26:62B3A8AF:vzcreate:108:terraform-prov@pve:","starttime":1655941295,"status":"running"}}
+2022/06/22 20:41:37 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/tasks/UPID:pve:003A70A4:0C68CF26:62B3A8AF:vzcreate:108:terraform-prov@pve:/status HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A8AE::HjRahqiaaW4HzZA0fsm+gKLhUT3QQ8jVGv/kt3+zmfRhTL6spGjZoEHzztGpqK+fbhT3xzwQuMOC2IxVPJ6tozg5BIB0ENEpG+eaFi2/TDT46lP10GHYJfIVrbGaC05KZc9qUVe1NFU0f28QWZEvPPqt0oYqo4w/DiAlECZ8+M0pkckVXn0pog2tIvJR9YwxtTr1wDu/XA4HwyZb0bEYv6rkILS96uyQucItAQE0AstPf+hqwYF8N1sfLkVNFvuU8VZjaMujpOsgkiIadeM1p6CBiUJ1eJp5vK/Nlwc2i2CrwY65+epEslD2+9+40LkJ4bAB+Ndip6NsJIi6H1DT2A==
+Csrfpreventiontoken: 62B3A8AE:R9d3bDWFJ5kv6Bi/Vs8Vvx3ZbGrl2UUjpeN7pbb+W5s
+Accept-Encoding: gzip
+
+2022/06/22 20:41:37 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 233
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:41:37 GMT
+Expires: Wed, 22 Jun 2022 23:41:37 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"node":"pve","type":"vzcreate","pstart":208195366,"pid":3829924,"id":"108","user":"terraform-prov@pve","starttime":1655941295,"status":"running","upid":"UPID:pve:003A70A4:0C68CF26:62B3A8AF:vzcreate:108:terraform-prov@pve:"}}
+2022/06/22 20:41:39 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/tasks/UPID:pve:003A70A4:0C68CF26:62B3A8AF:vzcreate:108:terraform-prov@pve:/status HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A8AE::HjRahqiaaW4HzZA0fsm+gKLhUT3QQ8jVGv/kt3+zmfRhTL6spGjZoEHzztGpqK+fbhT3xzwQuMOC2IxVPJ6tozg5BIB0ENEpG+eaFi2/TDT46lP10GHYJfIVrbGaC05KZc9qUVe1NFU0f28QWZEvPPqt0oYqo4w/DiAlECZ8+M0pkckVXn0pog2tIvJR9YwxtTr1wDu/XA4HwyZb0bEYv6rkILS96uyQucItAQE0AstPf+hqwYF8N1sfLkVNFvuU8VZjaMujpOsgkiIadeM1p6CBiUJ1eJp5vK/Nlwc2i2CrwY65+epEslD2+9+40LkJ4bAB+Ndip6NsJIi6H1DT2A==
+Csrfpreventiontoken: 62B3A8AE:R9d3bDWFJ5kv6Bi/Vs8Vvx3ZbGrl2UUjpeN7pbb+W5s
+Accept-Encoding: gzip
+
+2022/06/22 20:41:39 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 233
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:41:39 GMT
+Expires: Wed, 22 Jun 2022 23:41:39 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"starttime":1655941295,"status":"running","upid":"UPID:pve:003A70A4:0C68CF26:62B3A8AF:vzcreate:108:terraform-prov@pve:","id":"108","user":"terraform-prov@pve","pstart":208195366,"pid":3829924,"type":"vzcreate","node":"pve"}}
+2022/06/22 20:41:41 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/tasks/UPID:pve:003A70A4:0C68CF26:62B3A8AF:vzcreate:108:terraform-prov@pve:/status HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A8AE::HjRahqiaaW4HzZA0fsm+gKLhUT3QQ8jVGv/kt3+zmfRhTL6spGjZoEHzztGpqK+fbhT3xzwQuMOC2IxVPJ6tozg5BIB0ENEpG+eaFi2/TDT46lP10GHYJfIVrbGaC05KZc9qUVe1NFU0f28QWZEvPPqt0oYqo4w/DiAlECZ8+M0pkckVXn0pog2tIvJR9YwxtTr1wDu/XA4HwyZb0bEYv6rkILS96uyQucItAQE0AstPf+hqwYF8N1sfLkVNFvuU8VZjaMujpOsgkiIadeM1p6CBiUJ1eJp5vK/Nlwc2i2CrwY65+epEslD2+9+40LkJ4bAB+Ndip6NsJIi6H1DT2A==
+Csrfpreventiontoken: 62B3A8AE:R9d3bDWFJ5kv6Bi/Vs8Vvx3ZbGrl2UUjpeN7pbb+W5s
+Accept-Encoding: gzip
+
+2022/06/22 20:41:42 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 233
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:41:42 GMT
+Expires: Wed, 22 Jun 2022 23:41:42 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"pid":3829924,"pstart":208195366,"node":"pve","type":"vzcreate","upid":"UPID:pve:003A70A4:0C68CF26:62B3A8AF:vzcreate:108:terraform-prov@pve:","status":"running","starttime":1655941295,"user":"terraform-prov@pve","id":"108"}}
+2022/06/22 20:41:44 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/tasks/UPID:pve:003A70A4:0C68CF26:62B3A8AF:vzcreate:108:terraform-prov@pve:/status HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A8AE::HjRahqiaaW4HzZA0fsm+gKLhUT3QQ8jVGv/kt3+zmfRhTL6spGjZoEHzztGpqK+fbhT3xzwQuMOC2IxVPJ6tozg5BIB0ENEpG+eaFi2/TDT46lP10GHYJfIVrbGaC05KZc9qUVe1NFU0f28QWZEvPPqt0oYqo4w/DiAlECZ8+M0pkckVXn0pog2tIvJR9YwxtTr1wDu/XA4HwyZb0bEYv6rkILS96uyQucItAQE0AstPf+hqwYF8N1sfLkVNFvuU8VZjaMujpOsgkiIadeM1p6CBiUJ1eJp5vK/Nlwc2i2CrwY65+epEslD2+9+40LkJ4bAB+Ndip6NsJIi6H1DT2A==
+Csrfpreventiontoken: 62B3A8AE:R9d3bDWFJ5kv6Bi/Vs8Vvx3ZbGrl2UUjpeN7pbb+W5s
+Accept-Encoding: gzip
+
+2022/06/22 20:41:44 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 354
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:41:44 GMT
+Expires: Wed, 22 Jun 2022 23:41:44 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"id":"108","user":"terraform-prov@pve","status":"stopped","starttime":1655941295,"upid":"UPID:pve:003A70A4:0C68CF26:62B3A8AF:vzcreate:108:terraform-prov@pve:","type":"vzcreate","node":"pve","pstart":208195366,"exitstatus":"unable to create CT 108 - volume 'local:vztmpl/ubuntu-22.04-standard_22.04-1_amd64.tar.gz' does not exist","pid":3829924}}
+[90mWed, 22 Jun 2022 20:42:45 -0300[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:155[0m[36m >[0m Enabling the capture of log-library logs as ithe _capturelog flag was detected
+[90mWed, 22 Jun 2022 20:42:45 -0300[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:188[0m[36m >[0m Logging Started. Root Logger Set to level debug
+[90mWed, 22 Jun 2022 20:42:47 -0300[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:155[0m[36m >[0m Enabling the capture of log-library logs as ithe _capturelog flag was detected
+[90mWed, 22 Jun 2022 20:42:47 -0300[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:188[0m[36m >[0m Logging Started. Root Logger Set to level debug
+2022/06/22 20:42:47 [DEBUG] setting computed for "unused" from ComputedKeys
+2022/06/22 20:42:47 >>>>>>>>>> REQUEST:
+GET /api2/json/cluster/nextid HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A8F7::jlca8CDS1g7Q8vZOajzJnR93sh6h47XpPLeYP/iCkQ7P/bb8Kztcr8px178CAd3A0IWqyvywfx2LN5XbeaqMyx8LXRH3R0aBWxC5p/GhknrGrCsoodn2tbLZ9xmYIZ+torYVXxMz6azLqYItBlCnCWq067dFDmbboVfkAqlCfwB3oSu3hvPZjI+Nbl0BUrD00TBs305kwt1E+FPm7PNYCdL6VQq7te5ye1LEAfoP4Jzdrilyko2iDri0CASosHcuo4WREAu6TcARezIxu3TayJWF/OPeA1VQxggjVcFaiSyQi35pxltk2DS+MhYx9vdGiy/SthkRmPkuyOj/IFVIRQ==
+Csrfpreventiontoken: 62B3A8F7:S78bYvpfBt8tPqXMu0mFFDUp/5gJj1A5BPMJ3pOpFvo
+Accept-Encoding: gzip
+
+2022/06/22 20:42:47 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 14
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:42:47 GMT
+Expires: Wed, 22 Jun 2022 23:42:47 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":"108"}
+2022/06/22 20:42:47 >>>>>>>>>> REQUEST:
+POST /api2/json/nodes/pve/lxc HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Content-Length: 340
+Accept: application/json
+Content-Type: application/x-www-form-urlencoded
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A8F7::jlca8CDS1g7Q8vZOajzJnR93sh6h47XpPLeYP/iCkQ7P/bb8Kztcr8px178CAd3A0IWqyvywfx2LN5XbeaqMyx8LXRH3R0aBWxC5p/GhknrGrCsoodn2tbLZ9xmYIZ+torYVXxMz6azLqYItBlCnCWq067dFDmbboVfkAqlCfwB3oSu3hvPZjI+Nbl0BUrD00TBs305kwt1E+FPm7PNYCdL6VQq7te5ye1LEAfoP4Jzdrilyko2iDri0CASosHcuo4WREAu6TcARezIxu3TayJWF/OPeA1VQxggjVcFaiSyQi35pxltk2DS+MhYx9vdGiy/SthkRmPkuyOj/IFVIRQ==
+Csrfpreventiontoken: 62B3A8F7:S78bYvpfBt8tPqXMu0mFFDUp/5gJj1A5BPMJ3pOpFvo
+Accept-Encoding: gzip
+
+arch=amd64&cmode=tty&console=1&cores=1&cpulimit=0&cpuunits=1024&hostname=lxc-basic&memory=512&net0=ip%3Ddhcp%2Cname%3Deth0%2Cbridge%3Dvmbr0&onboot=0&ostemplate=local%3Avztmpl%2Fubuntu-22.04-standard_22.04-1_amd64.tar.zst&password=BasicLXCContainer&protection=0&rootfs=local-lvm%3A8&start=0&storage=local&swap=0&tty=2&unprivileged=1&vmid=108
+2022/06/22 20:42:47 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 79
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:42:47 GMT
+Expires: Wed, 22 Jun 2022 23:42:47 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":"UPID:pve:003A73EF:0C68EB2A:62B3A8F7:vzcreate:108:terraform-prov@pve:"}
+2022/06/22 20:42:47 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/tasks/UPID:pve:003A73EF:0C68EB2A:62B3A8F7:vzcreate:108:terraform-prov@pve:/status HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A8F7::jlca8CDS1g7Q8vZOajzJnR93sh6h47XpPLeYP/iCkQ7P/bb8Kztcr8px178CAd3A0IWqyvywfx2LN5XbeaqMyx8LXRH3R0aBWxC5p/GhknrGrCsoodn2tbLZ9xmYIZ+torYVXxMz6azLqYItBlCnCWq067dFDmbboVfkAqlCfwB3oSu3hvPZjI+Nbl0BUrD00TBs305kwt1E+FPm7PNYCdL6VQq7te5ye1LEAfoP4Jzdrilyko2iDri0CASosHcuo4WREAu6TcARezIxu3TayJWF/OPeA1VQxggjVcFaiSyQi35pxltk2DS+MhYx9vdGiy/SthkRmPkuyOj/IFVIRQ==
+Csrfpreventiontoken: 62B3A8F7:S78bYvpfBt8tPqXMu0mFFDUp/5gJj1A5BPMJ3pOpFvo
+Accept-Encoding: gzip
+
+2022/06/22 20:42:47 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 233
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:42:47 GMT
+Expires: Wed, 22 Jun 2022 23:42:47 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"type":"vzcreate","node":"pve","pid":3830767,"pstart":208202538,"user":"terraform-prov@pve","id":"108","upid":"UPID:pve:003A73EF:0C68EB2A:62B3A8F7:vzcreate:108:terraform-prov@pve:","status":"running","starttime":1655941367}}
+2022/06/22 20:42:49 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/tasks/UPID:pve:003A73EF:0C68EB2A:62B3A8F7:vzcreate:108:terraform-prov@pve:/status HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A8F7::jlca8CDS1g7Q8vZOajzJnR93sh6h47XpPLeYP/iCkQ7P/bb8Kztcr8px178CAd3A0IWqyvywfx2LN5XbeaqMyx8LXRH3R0aBWxC5p/GhknrGrCsoodn2tbLZ9xmYIZ+torYVXxMz6azLqYItBlCnCWq067dFDmbboVfkAqlCfwB3oSu3hvPZjI+Nbl0BUrD00TBs305kwt1E+FPm7PNYCdL6VQq7te5ye1LEAfoP4Jzdrilyko2iDri0CASosHcuo4WREAu6TcARezIxu3TayJWF/OPeA1VQxggjVcFaiSyQi35pxltk2DS+MhYx9vdGiy/SthkRmPkuyOj/IFVIRQ==
+Csrfpreventiontoken: 62B3A8F7:S78bYvpfBt8tPqXMu0mFFDUp/5gJj1A5BPMJ3pOpFvo
+Accept-Encoding: gzip
+
+2022/06/22 20:42:49 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 233
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:42:49 GMT
+Expires: Wed, 22 Jun 2022 23:42:49 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"user":"terraform-prov@pve","id":"108","upid":"UPID:pve:003A73EF:0C68EB2A:62B3A8F7:vzcreate:108:terraform-prov@pve:","starttime":1655941367,"status":"running","node":"pve","type":"vzcreate","pid":3830767,"pstart":208202538}}
+2022/06/22 20:42:51 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/tasks/UPID:pve:003A73EF:0C68EB2A:62B3A8F7:vzcreate:108:terraform-prov@pve:/status HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A8F7::jlca8CDS1g7Q8vZOajzJnR93sh6h47XpPLeYP/iCkQ7P/bb8Kztcr8px178CAd3A0IWqyvywfx2LN5XbeaqMyx8LXRH3R0aBWxC5p/GhknrGrCsoodn2tbLZ9xmYIZ+torYVXxMz6azLqYItBlCnCWq067dFDmbboVfkAqlCfwB3oSu3hvPZjI+Nbl0BUrD00TBs305kwt1E+FPm7PNYCdL6VQq7te5ye1LEAfoP4Jzdrilyko2iDri0CASosHcuo4WREAu6TcARezIxu3TayJWF/OPeA1VQxggjVcFaiSyQi35pxltk2DS+MhYx9vdGiy/SthkRmPkuyOj/IFVIRQ==
+Csrfpreventiontoken: 62B3A8F7:S78bYvpfBt8tPqXMu0mFFDUp/5gJj1A5BPMJ3pOpFvo
+Accept-Encoding: gzip
+
+2022/06/22 20:42:51 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 233
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:42:51 GMT
+Expires: Wed, 22 Jun 2022 23:42:51 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"upid":"UPID:pve:003A73EF:0C68EB2A:62B3A8F7:vzcreate:108:terraform-prov@pve:","starttime":1655941367,"status":"running","user":"terraform-prov@pve","id":"108","pid":3830767,"pstart":208202538,"node":"pve","type":"vzcreate"}}
+2022/06/22 20:42:53 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/tasks/UPID:pve:003A73EF:0C68EB2A:62B3A8F7:vzcreate:108:terraform-prov@pve:/status HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A8F7::jlca8CDS1g7Q8vZOajzJnR93sh6h47XpPLeYP/iCkQ7P/bb8Kztcr8px178CAd3A0IWqyvywfx2LN5XbeaqMyx8LXRH3R0aBWxC5p/GhknrGrCsoodn2tbLZ9xmYIZ+torYVXxMz6azLqYItBlCnCWq067dFDmbboVfkAqlCfwB3oSu3hvPZjI+Nbl0BUrD00TBs305kwt1E+FPm7PNYCdL6VQq7te5ye1LEAfoP4Jzdrilyko2iDri0CASosHcuo4WREAu6TcARezIxu3TayJWF/OPeA1VQxggjVcFaiSyQi35pxltk2DS+MhYx9vdGiy/SthkRmPkuyOj/IFVIRQ==
+Csrfpreventiontoken: 62B3A8F7:S78bYvpfBt8tPqXMu0mFFDUp/5gJj1A5BPMJ3pOpFvo
+Accept-Encoding: gzip
+
+2022/06/22 20:42:53 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 233
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:42:53 GMT
+Expires: Wed, 22 Jun 2022 23:42:53 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"status":"running","starttime":1655941367,"upid":"UPID:pve:003A73EF:0C68EB2A:62B3A8F7:vzcreate:108:terraform-prov@pve:","id":"108","user":"terraform-prov@pve","pstart":208202538,"pid":3830767,"type":"vzcreate","node":"pve"}}
+2022/06/22 20:42:55 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/tasks/UPID:pve:003A73EF:0C68EB2A:62B3A8F7:vzcreate:108:terraform-prov@pve:/status HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A8F7::jlca8CDS1g7Q8vZOajzJnR93sh6h47XpPLeYP/iCkQ7P/bb8Kztcr8px178CAd3A0IWqyvywfx2LN5XbeaqMyx8LXRH3R0aBWxC5p/GhknrGrCsoodn2tbLZ9xmYIZ+torYVXxMz6azLqYItBlCnCWq067dFDmbboVfkAqlCfwB3oSu3hvPZjI+Nbl0BUrD00TBs305kwt1E+FPm7PNYCdL6VQq7te5ye1LEAfoP4Jzdrilyko2iDri0CASosHcuo4WREAu6TcARezIxu3TayJWF/OPeA1VQxggjVcFaiSyQi35pxltk2DS+MhYx9vdGiy/SthkRmPkuyOj/IFVIRQ==
+Csrfpreventiontoken: 62B3A8F7:S78bYvpfBt8tPqXMu0mFFDUp/5gJj1A5BPMJ3pOpFvo
+Accept-Encoding: gzip
+
+2022/06/22 20:42:55 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 233
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:42:55 GMT
+Expires: Wed, 22 Jun 2022 23:42:55 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"pstart":208202538,"pid":3830767,"type":"vzcreate","node":"pve","status":"running","starttime":1655941367,"upid":"UPID:pve:003A73EF:0C68EB2A:62B3A8F7:vzcreate:108:terraform-prov@pve:","id":"108","user":"terraform-prov@pve"}}
+2022/06/22 20:42:57 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/tasks/UPID:pve:003A73EF:0C68EB2A:62B3A8F7:vzcreate:108:terraform-prov@pve:/status HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A8F7::jlca8CDS1g7Q8vZOajzJnR93sh6h47XpPLeYP/iCkQ7P/bb8Kztcr8px178CAd3A0IWqyvywfx2LN5XbeaqMyx8LXRH3R0aBWxC5p/GhknrGrCsoodn2tbLZ9xmYIZ+torYVXxMz6azLqYItBlCnCWq067dFDmbboVfkAqlCfwB3oSu3hvPZjI+Nbl0BUrD00TBs305kwt1E+FPm7PNYCdL6VQq7te5ye1LEAfoP4Jzdrilyko2iDri0CASosHcuo4WREAu6TcARezIxu3TayJWF/OPeA1VQxggjVcFaiSyQi35pxltk2DS+MhYx9vdGiy/SthkRmPkuyOj/IFVIRQ==
+Csrfpreventiontoken: 62B3A8F7:S78bYvpfBt8tPqXMu0mFFDUp/5gJj1A5BPMJ3pOpFvo
+Accept-Encoding: gzip
+
+2022/06/22 20:42:57 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 233
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:42:57 GMT
+Expires: Wed, 22 Jun 2022 23:42:57 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"upid":"UPID:pve:003A73EF:0C68EB2A:62B3A8F7:vzcreate:108:terraform-prov@pve:","status":"running","starttime":1655941367,"user":"terraform-prov@pve","id":"108","pid":3830767,"pstart":208202538,"node":"pve","type":"vzcreate"}}
+2022/06/22 20:42:59 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/tasks/UPID:pve:003A73EF:0C68EB2A:62B3A8F7:vzcreate:108:terraform-prov@pve:/status HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A8F7::jlca8CDS1g7Q8vZOajzJnR93sh6h47XpPLeYP/iCkQ7P/bb8Kztcr8px178CAd3A0IWqyvywfx2LN5XbeaqMyx8LXRH3R0aBWxC5p/GhknrGrCsoodn2tbLZ9xmYIZ+torYVXxMz6azLqYItBlCnCWq067dFDmbboVfkAqlCfwB3oSu3hvPZjI+Nbl0BUrD00TBs305kwt1E+FPm7PNYCdL6VQq7te5ye1LEAfoP4Jzdrilyko2iDri0CASosHcuo4WREAu6TcARezIxu3TayJWF/OPeA1VQxggjVcFaiSyQi35pxltk2DS+MhYx9vdGiy/SthkRmPkuyOj/IFVIRQ==
+Csrfpreventiontoken: 62B3A8F7:S78bYvpfBt8tPqXMu0mFFDUp/5gJj1A5BPMJ3pOpFvo
+Accept-Encoding: gzip
+
+2022/06/22 20:42:59 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 233
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:42:59 GMT
+Expires: Wed, 22 Jun 2022 23:42:59 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"node":"pve","type":"vzcreate","pid":3830767,"pstart":208202538,"user":"terraform-prov@pve","id":"108","upid":"UPID:pve:003A73EF:0C68EB2A:62B3A8F7:vzcreate:108:terraform-prov@pve:","starttime":1655941367,"status":"running"}}
+2022/06/22 20:43:01 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/tasks/UPID:pve:003A73EF:0C68EB2A:62B3A8F7:vzcreate:108:terraform-prov@pve:/status HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A8F7::jlca8CDS1g7Q8vZOajzJnR93sh6h47XpPLeYP/iCkQ7P/bb8Kztcr8px178CAd3A0IWqyvywfx2LN5XbeaqMyx8LXRH3R0aBWxC5p/GhknrGrCsoodn2tbLZ9xmYIZ+torYVXxMz6azLqYItBlCnCWq067dFDmbboVfkAqlCfwB3oSu3hvPZjI+Nbl0BUrD00TBs305kwt1E+FPm7PNYCdL6VQq7te5ye1LEAfoP4Jzdrilyko2iDri0CASosHcuo4WREAu6TcARezIxu3TayJWF/OPeA1VQxggjVcFaiSyQi35pxltk2DS+MhYx9vdGiy/SthkRmPkuyOj/IFVIRQ==
+Csrfpreventiontoken: 62B3A8F7:S78bYvpfBt8tPqXMu0mFFDUp/5gJj1A5BPMJ3pOpFvo
+Accept-Encoding: gzip
+
+2022/06/22 20:43:01 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 233
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:43:01 GMT
+Expires: Wed, 22 Jun 2022 23:43:01 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"status":"running","starttime":1655941367,"upid":"UPID:pve:003A73EF:0C68EB2A:62B3A8F7:vzcreate:108:terraform-prov@pve:","id":"108","user":"terraform-prov@pve","pstart":208202538,"pid":3830767,"node":"pve","type":"vzcreate"}}
+2022/06/22 20:43:03 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/tasks/UPID:pve:003A73EF:0C68EB2A:62B3A8F7:vzcreate:108:terraform-prov@pve:/status HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A8F7::jlca8CDS1g7Q8vZOajzJnR93sh6h47XpPLeYP/iCkQ7P/bb8Kztcr8px178CAd3A0IWqyvywfx2LN5XbeaqMyx8LXRH3R0aBWxC5p/GhknrGrCsoodn2tbLZ9xmYIZ+torYVXxMz6azLqYItBlCnCWq067dFDmbboVfkAqlCfwB3oSu3hvPZjI+Nbl0BUrD00TBs305kwt1E+FPm7PNYCdL6VQq7te5ye1LEAfoP4Jzdrilyko2iDri0CASosHcuo4WREAu6TcARezIxu3TayJWF/OPeA1VQxggjVcFaiSyQi35pxltk2DS+MhYx9vdGiy/SthkRmPkuyOj/IFVIRQ==
+Csrfpreventiontoken: 62B3A8F7:S78bYvpfBt8tPqXMu0mFFDUp/5gJj1A5BPMJ3pOpFvo
+Accept-Encoding: gzip
+
+2022/06/22 20:43:03 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 233
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:43:03 GMT
+Expires: Wed, 22 Jun 2022 23:43:03 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"id":"108","user":"terraform-prov@pve","status":"running","starttime":1655941367,"upid":"UPID:pve:003A73EF:0C68EB2A:62B3A8F7:vzcreate:108:terraform-prov@pve:","type":"vzcreate","node":"pve","pstart":208202538,"pid":3830767}}
+2022/06/22 20:43:05 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/tasks/UPID:pve:003A73EF:0C68EB2A:62B3A8F7:vzcreate:108:terraform-prov@pve:/status HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A8F7::jlca8CDS1g7Q8vZOajzJnR93sh6h47XpPLeYP/iCkQ7P/bb8Kztcr8px178CAd3A0IWqyvywfx2LN5XbeaqMyx8LXRH3R0aBWxC5p/GhknrGrCsoodn2tbLZ9xmYIZ+torYVXxMz6azLqYItBlCnCWq067dFDmbboVfkAqlCfwB3oSu3hvPZjI+Nbl0BUrD00TBs305kwt1E+FPm7PNYCdL6VQq7te5ye1LEAfoP4Jzdrilyko2iDri0CASosHcuo4WREAu6TcARezIxu3TayJWF/OPeA1VQxggjVcFaiSyQi35pxltk2DS+MhYx9vdGiy/SthkRmPkuyOj/IFVIRQ==
+Csrfpreventiontoken: 62B3A8F7:S78bYvpfBt8tPqXMu0mFFDUp/5gJj1A5BPMJ3pOpFvo
+Accept-Encoding: gzip
+
+2022/06/22 20:43:05 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 233
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:43:05 GMT
+Expires: Wed, 22 Jun 2022 23:43:05 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"type":"vzcreate","node":"pve","pid":3830767,"pstart":208202538,"user":"terraform-prov@pve","id":"108","upid":"UPID:pve:003A73EF:0C68EB2A:62B3A8F7:vzcreate:108:terraform-prov@pve:","status":"running","starttime":1655941367}}
+2022/06/22 20:43:07 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/tasks/UPID:pve:003A73EF:0C68EB2A:62B3A8F7:vzcreate:108:terraform-prov@pve:/status HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A8F7::jlca8CDS1g7Q8vZOajzJnR93sh6h47XpPLeYP/iCkQ7P/bb8Kztcr8px178CAd3A0IWqyvywfx2LN5XbeaqMyx8LXRH3R0aBWxC5p/GhknrGrCsoodn2tbLZ9xmYIZ+torYVXxMz6azLqYItBlCnCWq067dFDmbboVfkAqlCfwB3oSu3hvPZjI+Nbl0BUrD00TBs305kwt1E+FPm7PNYCdL6VQq7te5ye1LEAfoP4Jzdrilyko2iDri0CASosHcuo4WREAu6TcARezIxu3TayJWF/OPeA1VQxggjVcFaiSyQi35pxltk2DS+MhYx9vdGiy/SthkRmPkuyOj/IFVIRQ==
+Csrfpreventiontoken: 62B3A8F7:S78bYvpfBt8tPqXMu0mFFDUp/5gJj1A5BPMJ3pOpFvo
+Accept-Encoding: gzip
+
+2022/06/22 20:43:07 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 233
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:43:07 GMT
+Expires: Wed, 22 Jun 2022 23:43:07 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"status":"running","starttime":1655941367,"upid":"UPID:pve:003A73EF:0C68EB2A:62B3A8F7:vzcreate:108:terraform-prov@pve:","id":"108","user":"terraform-prov@pve","pstart":208202538,"pid":3830767,"node":"pve","type":"vzcreate"}}
+2022/06/22 20:43:09 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/tasks/UPID:pve:003A73EF:0C68EB2A:62B3A8F7:vzcreate:108:terraform-prov@pve:/status HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A8F7::jlca8CDS1g7Q8vZOajzJnR93sh6h47XpPLeYP/iCkQ7P/bb8Kztcr8px178CAd3A0IWqyvywfx2LN5XbeaqMyx8LXRH3R0aBWxC5p/GhknrGrCsoodn2tbLZ9xmYIZ+torYVXxMz6azLqYItBlCnCWq067dFDmbboVfkAqlCfwB3oSu3hvPZjI+Nbl0BUrD00TBs305kwt1E+FPm7PNYCdL6VQq7te5ye1LEAfoP4Jzdrilyko2iDri0CASosHcuo4WREAu6TcARezIxu3TayJWF/OPeA1VQxggjVcFaiSyQi35pxltk2DS+MhYx9vdGiy/SthkRmPkuyOj/IFVIRQ==
+Csrfpreventiontoken: 62B3A8F7:S78bYvpfBt8tPqXMu0mFFDUp/5gJj1A5BPMJ3pOpFvo
+Accept-Encoding: gzip
+
+2022/06/22 20:43:09 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 233
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:43:09 GMT
+Expires: Wed, 22 Jun 2022 23:43:09 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"pid":3830767,"pstart":208202538,"node":"pve","type":"vzcreate","upid":"UPID:pve:003A73EF:0C68EB2A:62B3A8F7:vzcreate:108:terraform-prov@pve:","status":"running","starttime":1655941367,"user":"terraform-prov@pve","id":"108"}}
+2022/06/22 20:43:11 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/tasks/UPID:pve:003A73EF:0C68EB2A:62B3A8F7:vzcreate:108:terraform-prov@pve:/status HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A8F7::jlca8CDS1g7Q8vZOajzJnR93sh6h47XpPLeYP/iCkQ7P/bb8Kztcr8px178CAd3A0IWqyvywfx2LN5XbeaqMyx8LXRH3R0aBWxC5p/GhknrGrCsoodn2tbLZ9xmYIZ+torYVXxMz6azLqYItBlCnCWq067dFDmbboVfkAqlCfwB3oSu3hvPZjI+Nbl0BUrD00TBs305kwt1E+FPm7PNYCdL6VQq7te5ye1LEAfoP4Jzdrilyko2iDri0CASosHcuo4WREAu6TcARezIxu3TayJWF/OPeA1VQxggjVcFaiSyQi35pxltk2DS+MhYx9vdGiy/SthkRmPkuyOj/IFVIRQ==
+Csrfpreventiontoken: 62B3A8F7:S78bYvpfBt8tPqXMu0mFFDUp/5gJj1A5BPMJ3pOpFvo
+Accept-Encoding: gzip
+
+2022/06/22 20:43:11 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 233
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:43:11 GMT
+Expires: Wed, 22 Jun 2022 23:43:11 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"node":"pve","type":"vzcreate","pstart":208202538,"pid":3830767,"id":"108","user":"terraform-prov@pve","status":"running","starttime":1655941367,"upid":"UPID:pve:003A73EF:0C68EB2A:62B3A8F7:vzcreate:108:terraform-prov@pve:"}}
+2022/06/22 20:43:13 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/tasks/UPID:pve:003A73EF:0C68EB2A:62B3A8F7:vzcreate:108:terraform-prov@pve:/status HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A8F7::jlca8CDS1g7Q8vZOajzJnR93sh6h47XpPLeYP/iCkQ7P/bb8Kztcr8px178CAd3A0IWqyvywfx2LN5XbeaqMyx8LXRH3R0aBWxC5p/GhknrGrCsoodn2tbLZ9xmYIZ+torYVXxMz6azLqYItBlCnCWq067dFDmbboVfkAqlCfwB3oSu3hvPZjI+Nbl0BUrD00TBs305kwt1E+FPm7PNYCdL6VQq7te5ye1LEAfoP4Jzdrilyko2iDri0CASosHcuo4WREAu6TcARezIxu3TayJWF/OPeA1VQxggjVcFaiSyQi35pxltk2DS+MhYx9vdGiy/SthkRmPkuyOj/IFVIRQ==
+Csrfpreventiontoken: 62B3A8F7:S78bYvpfBt8tPqXMu0mFFDUp/5gJj1A5BPMJ3pOpFvo
+Accept-Encoding: gzip
+
+2022/06/22 20:43:13 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 233
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:43:13 GMT
+Expires: Wed, 22 Jun 2022 23:43:13 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"pid":3830767,"pstart":208202538,"node":"pve","type":"vzcreate","upid":"UPID:pve:003A73EF:0C68EB2A:62B3A8F7:vzcreate:108:terraform-prov@pve:","starttime":1655941367,"status":"running","user":"terraform-prov@pve","id":"108"}}
+2022/06/22 20:43:15 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/tasks/UPID:pve:003A73EF:0C68EB2A:62B3A8F7:vzcreate:108:terraform-prov@pve:/status HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A8F7::jlca8CDS1g7Q8vZOajzJnR93sh6h47XpPLeYP/iCkQ7P/bb8Kztcr8px178CAd3A0IWqyvywfx2LN5XbeaqMyx8LXRH3R0aBWxC5p/GhknrGrCsoodn2tbLZ9xmYIZ+torYVXxMz6azLqYItBlCnCWq067dFDmbboVfkAqlCfwB3oSu3hvPZjI+Nbl0BUrD00TBs305kwt1E+FPm7PNYCdL6VQq7te5ye1LEAfoP4Jzdrilyko2iDri0CASosHcuo4WREAu6TcARezIxu3TayJWF/OPeA1VQxggjVcFaiSyQi35pxltk2DS+MhYx9vdGiy/SthkRmPkuyOj/IFVIRQ==
+Csrfpreventiontoken: 62B3A8F7:S78bYvpfBt8tPqXMu0mFFDUp/5gJj1A5BPMJ3pOpFvo
+Accept-Encoding: gzip
+
+2022/06/22 20:43:15 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 233
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:43:15 GMT
+Expires: Wed, 22 Jun 2022 23:43:15 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"node":"pve","type":"vzcreate","pstart":208202538,"pid":3830767,"id":"108","user":"terraform-prov@pve","starttime":1655941367,"status":"running","upid":"UPID:pve:003A73EF:0C68EB2A:62B3A8F7:vzcreate:108:terraform-prov@pve:"}}
+2022/06/22 20:43:17 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/tasks/UPID:pve:003A73EF:0C68EB2A:62B3A8F7:vzcreate:108:terraform-prov@pve:/status HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A8F7::jlca8CDS1g7Q8vZOajzJnR93sh6h47XpPLeYP/iCkQ7P/bb8Kztcr8px178CAd3A0IWqyvywfx2LN5XbeaqMyx8LXRH3R0aBWxC5p/GhknrGrCsoodn2tbLZ9xmYIZ+torYVXxMz6azLqYItBlCnCWq067dFDmbboVfkAqlCfwB3oSu3hvPZjI+Nbl0BUrD00TBs305kwt1E+FPm7PNYCdL6VQq7te5ye1LEAfoP4Jzdrilyko2iDri0CASosHcuo4WREAu6TcARezIxu3TayJWF/OPeA1VQxggjVcFaiSyQi35pxltk2DS+MhYx9vdGiy/SthkRmPkuyOj/IFVIRQ==
+Csrfpreventiontoken: 62B3A8F7:S78bYvpfBt8tPqXMu0mFFDUp/5gJj1A5BPMJ3pOpFvo
+Accept-Encoding: gzip
+
+2022/06/22 20:43:17 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 233
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:43:17 GMT
+Expires: Wed, 22 Jun 2022 23:43:17 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"pstart":208202538,"pid":3830767,"node":"pve","type":"vzcreate","starttime":1655941367,"status":"running","upid":"UPID:pve:003A73EF:0C68EB2A:62B3A8F7:vzcreate:108:terraform-prov@pve:","id":"108","user":"terraform-prov@pve"}}
+2022/06/22 20:43:19 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/tasks/UPID:pve:003A73EF:0C68EB2A:62B3A8F7:vzcreate:108:terraform-prov@pve:/status HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A8F7::jlca8CDS1g7Q8vZOajzJnR93sh6h47XpPLeYP/iCkQ7P/bb8Kztcr8px178CAd3A0IWqyvywfx2LN5XbeaqMyx8LXRH3R0aBWxC5p/GhknrGrCsoodn2tbLZ9xmYIZ+torYVXxMz6azLqYItBlCnCWq067dFDmbboVfkAqlCfwB3oSu3hvPZjI+Nbl0BUrD00TBs305kwt1E+FPm7PNYCdL6VQq7te5ye1LEAfoP4Jzdrilyko2iDri0CASosHcuo4WREAu6TcARezIxu3TayJWF/OPeA1VQxggjVcFaiSyQi35pxltk2DS+MhYx9vdGiy/SthkRmPkuyOj/IFVIRQ==
+Csrfpreventiontoken: 62B3A8F7:S78bYvpfBt8tPqXMu0mFFDUp/5gJj1A5BPMJ3pOpFvo
+Accept-Encoding: gzip
+
+2022/06/22 20:43:19 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 233
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:43:19 GMT
+Expires: Wed, 22 Jun 2022 23:43:19 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"pstart":208202538,"pid":3830767,"node":"pve","type":"vzcreate","status":"running","starttime":1655941367,"upid":"UPID:pve:003A73EF:0C68EB2A:62B3A8F7:vzcreate:108:terraform-prov@pve:","id":"108","user":"terraform-prov@pve"}}
+2022/06/22 20:43:21 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/tasks/UPID:pve:003A73EF:0C68EB2A:62B3A8F7:vzcreate:108:terraform-prov@pve:/status HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A8F7::jlca8CDS1g7Q8vZOajzJnR93sh6h47XpPLeYP/iCkQ7P/bb8Kztcr8px178CAd3A0IWqyvywfx2LN5XbeaqMyx8LXRH3R0aBWxC5p/GhknrGrCsoodn2tbLZ9xmYIZ+torYVXxMz6azLqYItBlCnCWq067dFDmbboVfkAqlCfwB3oSu3hvPZjI+Nbl0BUrD00TBs305kwt1E+FPm7PNYCdL6VQq7te5ye1LEAfoP4Jzdrilyko2iDri0CASosHcuo4WREAu6TcARezIxu3TayJWF/OPeA1VQxggjVcFaiSyQi35pxltk2DS+MhYx9vdGiy/SthkRmPkuyOj/IFVIRQ==
+Csrfpreventiontoken: 62B3A8F7:S78bYvpfBt8tPqXMu0mFFDUp/5gJj1A5BPMJ3pOpFvo
+Accept-Encoding: gzip
+
+2022/06/22 20:43:21 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 251
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:43:21 GMT
+Expires: Wed, 22 Jun 2022 23:43:21 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"status":"stopped","starttime":1655941367,"upid":"UPID:pve:003A73EF:0C68EB2A:62B3A8F7:vzcreate:108:terraform-prov@pve:","id":"108","user":"terraform-prov@pve","pstart":208202538,"exitstatus":"OK","pid":3830767,"type":"vzcreate","node":"pve"}}
+2022/06/22 20:43:21 >>>>>>>>>> REQUEST:
+GET /api2/json/cluster/resources?type=vm HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A8F7::jlca8CDS1g7Q8vZOajzJnR93sh6h47XpPLeYP/iCkQ7P/bb8Kztcr8px178CAd3A0IWqyvywfx2LN5XbeaqMyx8LXRH3R0aBWxC5p/GhknrGrCsoodn2tbLZ9xmYIZ+torYVXxMz6azLqYItBlCnCWq067dFDmbboVfkAqlCfwB3oSu3hvPZjI+Nbl0BUrD00TBs305kwt1E+FPm7PNYCdL6VQq7te5ye1LEAfoP4Jzdrilyko2iDri0CASosHcuo4WREAu6TcARezIxu3TayJWF/OPeA1VQxggjVcFaiSyQi35pxltk2DS+MhYx9vdGiy/SthkRmPkuyOj/IFVIRQ==
+Csrfpreventiontoken: 62B3A8F7:S78bYvpfBt8tPqXMu0mFFDUp/5gJj1A5BPMJ3pOpFvo
+Accept-Encoding: gzip
+
+2022/06/22 20:43:21 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 3675
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:43:21 GMT
+Expires: Wed, 22 Jun 2022 23:43:21 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":[{"id":"lxc/100","disk":3923169280,"vmid":100,"uptime":2081891,"node":"pve","netout":252743072,"diskread":103144374272,"type":"lxc","maxcpu":1,"diskwrite":41726992384,"maxdisk":10501771264,"mem":111538176,"template":0,"status":"running","name":"pihole","netin":995721545,"cpu":0.000598081987133243,"maxmem":536870912},{"name":"plex","status":"running","template":0,"mem":156553216,"maxdisk":12573614080,"maxmem":1073741824,"cpu":0.0172845694281507,"netin":1539017494,"uptime":2081777,"disk":3574788096,"vmid":101,"id":"lxc/101","diskwrite":227424182272,"maxcpu":6,"type":"lxc","diskread":38115287040,"netout":57221174023,"node":"pve"},{"maxcpu":2,"type":"lxc","diskwrite":126025728,"netout":198260,"node":"pve","diskread":987295744,"disk":3021991936,"vmid":102,"uptime":67132,"id":"lxc/102","maxmem":536870912,"cpu":0.000119616397426649,"netin":29755489,"name":"finance","status":"running","maxdisk":12573614080,"template":0,"mem":130662400},{"id":"lxc/103","vmid":103,"disk":4318277632,"uptime":2081830,"netout":530795196,"node":"pve","diskread":43407147008,"type":"lxc","maxcpu":2,"diskwrite":94971543552,"maxdisk":12573614080,"template":0,"mem":932691968,"name":"unifi","status":"running","netin":2856498044,"maxmem":2147483648,"cpu":0.00490427229449259},{"disk":2054172672,"vmid":104,"uptime":1764637,"id":"lxc/104","maxcpu":4,"type":"lxc","diskwrite":8243716096,"node":"pve","netout":1245890952,"diskread":29990903808,"status":"running","name":"webdav","maxdisk":83955703808,"mem":63524864,"template":0,"cpu":0.00242223204788963,"maxmem":2147483648,"netin":648328834},{"name":"gitea","status":"running","template":0,"mem":186179584,"maxdisk":12573614080,"maxmem":2147483648,"cpu":0.00113635577555316,"netin":705304697,"uptime":2081674,"disk":2554183680,"vmid":105,"id":"lxc/105","diskwrite":10774732800,"maxcpu":2,"type":"lxc","diskread":37585354752,"netout":7976142,"node":"pve"},{"netin":690597156,"cpu":0,"maxmem":4294967296,"mem":48119808,"template":0,"maxdisk":12573614080,"status":"running","name":"bastion","diskread":33127301120,"node":"pve","netout":290693503,"diskwrite":11219369984,"type":"lxc","maxcpu":12,"id":"lxc/106","uptime":2081616,"vmid":106,"disk":6152323072},{"id":"lxc/107","uptime":2081554,"disk":2104901632,"vmid":107,"diskread":33286782976,"netout":77320998849,"node":"pve","diskwrite":16234741760,"maxcpu":4,"type":"lxc","template":0,"mem":66621440,"maxdisk":15786254336,"name":"torrent","status":"running","netin":54383594373,"maxmem":536870912,"cpu":0.000897122980699864},{"disk":0,"vmid":108,"uptime":0,"id":"lxc/108","maxcpu":1,"type":"lxc","diskwrite":0,"netout":0,"node":"pve","diskread":0,"name":"lxc-basic","status":"stopped","maxdisk":8589934592,"template":0,"mem":0,"maxmem":536870912,"cpu":0,"netin":0},{"cpu":0,"maxmem":536870912,"netin":25906384,"status":"running","name":"wakapi","mem":41177088,"template":0,"maxdisk":8350298112,"diskwrite":50003968,"type":"lxc","maxcpu":1,"diskread":1271832576,"node":"pve","netout":119581,"uptime":66813,"disk":2218455040,"vmid":111,"id":"lxc/111"},{"id":"lxc/120","uptime":416336,"disk":4985561088,"vmid":120,"diskread":15693185024,"netout":1362031056,"node":"pve","diskwrite":19189538816,"type":"lxc","maxcpu":2,"template":0,"mem":339582976,"maxdisk":8350298112,"name":"monitoria","status":"running","netin":1102389781,"maxmem":1073741824,"cpu":0.00478465589706594},{"vmid":400,"disk":1403273216,"uptime":2081385,"id":"lxc/400","maxcpu":1,"type":"lxc","diskwrite":1020379136,"netout":3761660,"node":"pve","diskread":20873936896,"name":"automation","status":"running","maxdisk":12573614080,"template":0,"mem":35655680,"maxmem":1073741824,"cpu":0.000478465589706594,"netin":600176301}]}
+2022/06/22 20:43:21 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/lxc/108/config HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A8F7::jlca8CDS1g7Q8vZOajzJnR93sh6h47XpPLeYP/iCkQ7P/bb8Kztcr8px178CAd3A0IWqyvywfx2LN5XbeaqMyx8LXRH3R0aBWxC5p/GhknrGrCsoodn2tbLZ9xmYIZ+torYVXxMz6azLqYItBlCnCWq067dFDmbboVfkAqlCfwB3oSu3hvPZjI+Nbl0BUrD00TBs305kwt1E+FPm7PNYCdL6VQq7te5ye1LEAfoP4Jzdrilyko2iDri0CASosHcuo4WREAu6TcARezIxu3TayJWF/OPeA1VQxggjVcFaiSyQi35pxltk2DS+MhYx9vdGiy/SthkRmPkuyOj/IFVIRQ==
+Csrfpreventiontoken: 62B3A8F7:S78bYvpfBt8tPqXMu0mFFDUp/5gJj1A5BPMJ3pOpFvo
+Accept-Encoding: gzip
+
+2022/06/22 20:43:21 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 376
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:43:21 GMT
+Expires: Wed, 22 Jun 2022 23:43:21 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"cpuunits":1024,"net0":"name=eth0,bridge=vmbr0,hwaddr=EE:69:4E:B3:21:9E,ip=dhcp,type=veth","cores":1,"arch":"amd64","console":1,"rootfs":"local-lvm:vm-108-disk-0,size=8G","hostname":"lxc-basic","digest":"f6103005cb5080fdebd33707ae4e1d14bc3c22ae","unprivileged":1,"onboot":0,"ostype":"ubuntu","tty":2,"memory":512,"protection":0,"cpulimit":"0","swap":0,"cmode":"tty"}}
+2022/06/22 20:43:21 >>>>>>>>>> REQUEST:
+GET /api2/json/cluster/ha/resources/108 HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A8F7::jlca8CDS1g7Q8vZOajzJnR93sh6h47XpPLeYP/iCkQ7P/bb8Kztcr8px178CAd3A0IWqyvywfx2LN5XbeaqMyx8LXRH3R0aBWxC5p/GhknrGrCsoodn2tbLZ9xmYIZ+torYVXxMz6azLqYItBlCnCWq067dFDmbboVfkAqlCfwB3oSu3hvPZjI+Nbl0BUrD00TBs305kwt1E+FPm7PNYCdL6VQq7te5ye1LEAfoP4Jzdrilyko2iDri0CASosHcuo4WREAu6TcARezIxu3TayJWF/OPeA1VQxggjVcFaiSyQi35pxltk2DS+MhYx9vdGiy/SthkRmPkuyOj/IFVIRQ==
+Csrfpreventiontoken: 62B3A8F7:S78bYvpfBt8tPqXMu0mFFDUp/5gJj1A5BPMJ3pOpFvo
+Accept-Encoding: gzip
+
+2022/06/22 20:43:21 <<<<<<<<<< RESULT:
+HTTP/1.1 403 Permission check failed (/, Sys.Audit)
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:43:21 GMT
+Expires: Wed, 22 Jun 2022 23:43:21 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2022/06/22 20:43:21 [DEBUG][GetJsonRetryable] Sleeping for 1 seconds before asking url /cluster/ha/resources/108
+2022/06/22 20:43:22 >>>>>>>>>> REQUEST:
+GET /api2/json/cluster/ha/resources/108 HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A8F7::jlca8CDS1g7Q8vZOajzJnR93sh6h47XpPLeYP/iCkQ7P/bb8Kztcr8px178CAd3A0IWqyvywfx2LN5XbeaqMyx8LXRH3R0aBWxC5p/GhknrGrCsoodn2tbLZ9xmYIZ+torYVXxMz6azLqYItBlCnCWq067dFDmbboVfkAqlCfwB3oSu3hvPZjI+Nbl0BUrD00TBs305kwt1E+FPm7PNYCdL6VQq7te5ye1LEAfoP4Jzdrilyko2iDri0CASosHcuo4WREAu6TcARezIxu3TayJWF/OPeA1VQxggjVcFaiSyQi35pxltk2DS+MhYx9vdGiy/SthkRmPkuyOj/IFVIRQ==
+Csrfpreventiontoken: 62B3A8F7:S78bYvpfBt8tPqXMu0mFFDUp/5gJj1A5BPMJ3pOpFvo
+Accept-Encoding: gzip
+
+2022/06/22 20:43:22 <<<<<<<<<< RESULT:
+HTTP/1.1 403 Permission check failed (/, Sys.Audit)
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:43:22 GMT
+Expires: Wed, 22 Jun 2022 23:43:22 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2022/06/22 20:43:22 [DEBUG][GetJsonRetryable] Sleeping for 2 seconds before asking url /cluster/ha/resources/108
+2022/06/22 20:43:24 >>>>>>>>>> REQUEST:
+GET /api2/json/cluster/ha/resources/108 HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A8F7::jlca8CDS1g7Q8vZOajzJnR93sh6h47XpPLeYP/iCkQ7P/bb8Kztcr8px178CAd3A0IWqyvywfx2LN5XbeaqMyx8LXRH3R0aBWxC5p/GhknrGrCsoodn2tbLZ9xmYIZ+torYVXxMz6azLqYItBlCnCWq067dFDmbboVfkAqlCfwB3oSu3hvPZjI+Nbl0BUrD00TBs305kwt1E+FPm7PNYCdL6VQq7te5ye1LEAfoP4Jzdrilyko2iDri0CASosHcuo4WREAu6TcARezIxu3TayJWF/OPeA1VQxggjVcFaiSyQi35pxltk2DS+MhYx9vdGiy/SthkRmPkuyOj/IFVIRQ==
+Csrfpreventiontoken: 62B3A8F7:S78bYvpfBt8tPqXMu0mFFDUp/5gJj1A5BPMJ3pOpFvo
+Accept-Encoding: gzip
+
+2022/06/22 20:43:24 <<<<<<<<<< RESULT:
+HTTP/1.1 403 Permission check failed (/, Sys.Audit)
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:43:24 GMT
+Expires: Wed, 22 Jun 2022 23:43:24 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2022/06/22 20:43:24 [DEBUG][GetJsonRetryable] Sleeping for 3 seconds before asking url /cluster/ha/resources/108
+2022/06/22 20:43:27 [DEBUG] Container 108(lxc-basic) has no HA config
+2022/06/22 20:43:27 >>>>>>>>>> REQUEST:
+GET /api2/json/pools HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A8F7::jlca8CDS1g7Q8vZOajzJnR93sh6h47XpPLeYP/iCkQ7P/bb8Kztcr8px178CAd3A0IWqyvywfx2LN5XbeaqMyx8LXRH3R0aBWxC5p/GhknrGrCsoodn2tbLZ9xmYIZ+torYVXxMz6azLqYItBlCnCWq067dFDmbboVfkAqlCfwB3oSu3hvPZjI+Nbl0BUrD00TBs305kwt1E+FPm7PNYCdL6VQq7te5ye1LEAfoP4Jzdrilyko2iDri0CASosHcuo4WREAu6TcARezIxu3TayJWF/OPeA1VQxggjVcFaiSyQi35pxltk2DS+MhYx9vdGiy/SthkRmPkuyOj/IFVIRQ==
+Csrfpreventiontoken: 62B3A8F7:S78bYvpfBt8tPqXMu0mFFDUp/5gJj1A5BPMJ3pOpFvo
+Accept-Encoding: gzip
+
+2022/06/22 20:43:27 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 11
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:43:27 GMT
+Expires: Wed, 22 Jun 2022 23:43:27 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":[]}
+[90mWed, 22 Jun 2022 20:43:42 -0300[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:155[0m[36m >[0m Enabling the capture of log-library logs as ithe _capturelog flag was detected
+[90mWed, 22 Jun 2022 20:43:42 -0300[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:188[0m[36m >[0m Logging Started. Root Logger Set to level debug
+2022/06/22 20:43:42 >>>>>>>>>> REQUEST:
+GET /api2/json/cluster/resources?type=vm HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A92E::PCVKkfE5mIqI34sWWQflZo++A9U5SuL4JUiJSg+/ebmM5R9t6wfpdcsDd0jjzWgO+5lMRcoTG1fyDKjWpeCJtZokVjFwPN0KDwQ/fp+a0XHijdvBePVjZ8cW0djzrY7ooSFl3JjOG0kCQlHQtYirkFLs0VdXQagL+oC2uNKPkoSY18mZ+tQ1tmLd305ZvXBvwfVjYi0sv+Vkou7TrpD6P1elmBVfQPhj0WL9cHEb2SZVbux5YuF9fWbXBggpCcVDKmhYDJ56qJfj+kRoUAINb0aoz7Foisvmuwp+r4WO0U3D9meNi8IDQwVQ4O8XCeKrYf/Itxy0+J0ffblmnvSm9Q==
+Csrfpreventiontoken: 62B3A92E:E/5qt56+tdNGFXJtADLeJt74AVzFDjApdnGlAGzHLFY
+Accept-Encoding: gzip
+
+2022/06/22 20:43:42 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 3675
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:43:42 GMT
+Expires: Wed, 22 Jun 2022 23:43:42 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":[{"id":"lxc/100","uptime":2081910,"disk":3923177472,"vmid":100,"diskread":103144374272,"node":"pve","netout":252746765,"diskwrite":41726992384,"type":"lxc","maxcpu":1,"mem":111534080,"template":0,"maxdisk":10501771264,"status":"running","name":"pihole","netin":995727062,"cpu":0.000853510323160173,"maxmem":536870912},{"netin":1539069828,"cpu":0.0179770611815611,"maxmem":1073741824,"mem":156921856,"template":0,"maxdisk":12573614080,"status":"running","name":"plex","diskread":38137880576,"node":"pve","netout":57226801524,"diskwrite":227468812288,"type":"lxc","maxcpu":6,"id":"lxc/101","uptime":2081796,"vmid":101,"disk":3580813312},{"cpu":0.000160033185592532,"maxmem":536870912,"netin":29756540,"status":"running","name":"finance","maxdisk":12573614080,"mem":130662400,"template":0,"type":"lxc","maxcpu":2,"diskwrite":126025728,"node":"pve","netout":198260,"diskread":987295744,"vmid":102,"disk":3021991936,"uptime":67151,"id":"lxc/102"},{"netin":2856509538,"cpu":0.00453427359178842,"maxmem":2147483648,"maxdisk":12573614080,"mem":932696064,"template":0,"status":"running","name":"unifi","node":"pve","netout":530798533,"diskread":43407147008,"maxcpu":2,"type":"lxc","diskwrite":94971854848,"id":"lxc/103","disk":4318281728,"vmid":103,"uptime":2081849},{"netin":648329951,"maxmem":2147483648,"cpu":5.33443951975108e-05,"template":0,"mem":63520768,"maxdisk":83955703808,"name":"webdav","status":"running","diskread":29990903808,"netout":1245891018,"node":"pve","diskwrite":8243716096,"type":"lxc","maxcpu":4,"id":"lxc/104","uptime":1764656,"disk":2054172672,"vmid":104},{"netin":705305748,"maxmem":2147483648,"cpu":0.00117357669434524,"maxdisk":12573614080,"template":0,"mem":186179584,"name":"gitea","status":"running","netout":7976142,"node":"pve","diskread":37585354752,"type":"lxc","maxcpu":2,"diskwrite":10774732800,"id":"lxc/105","vmid":105,"disk":2554183680,"uptime":2081694},{"netin":690598207,"maxmem":4294967296,"cpu":0,"template":0,"mem":48119808,"maxdisk":12573614080,"name":"bastion","status":"running","diskread":33127301120,"netout":290693503,"node":"pve","diskwrite":11219369984,"maxcpu":12,"type":"lxc","id":"lxc/106","uptime":2081635,"vmid":106,"disk":6152323072},{"maxcpu":4,"type":"lxc","diskwrite":16234741760,"netout":77325764454,"node":"pve","diskread":33287913472,"disk":2104901632,"vmid":107,"uptime":2081573,"id":"lxc/107","maxmem":536870912,"cpu":0.00338736909504194,"netin":54383755221,"name":"torrent","status":"running","maxdisk":15786254336,"template":0,"mem":66629632},{"diskwrite":0,"maxcpu":1,"type":"lxc","diskread":0,"node":"pve","netout":0,"uptime":0,"disk":0,"vmid":108,"id":"lxc/108","cpu":0,"maxmem":536870912,"netin":0,"status":"stopped","name":"lxc-basic","mem":0,"template":0,"maxdisk":8589934592},{"uptime":66833,"disk":2218455040,"vmid":111,"id":"lxc/111","diskwrite":50003968,"type":"lxc","maxcpu":1,"diskread":1271832576,"netout":119581,"node":"pve","name":"wakapi","status":"running","template":0,"mem":41177088,"maxdisk":8350298112,"maxmem":536870912,"cpu":0,"netin":25907435},{"cpu":0.00330735250224567,"maxmem":1073741824,"netin":1102424076,"status":"running","name":"monitoria","maxdisk":8350298112,"mem":339673088,"template":0,"maxcpu":2,"type":"lxc","diskwrite":19191914496,"node":"pve","netout":1362035945,"diskread":15707389952,"disk":4985757696,"vmid":120,"uptime":416355,"id":"lxc/120"},{"mem":35655680,"template":0,"maxdisk":12573614080,"status":"running","name":"automation","netin":600177352,"cpu":0.000426755161580086,"maxmem":1073741824,"id":"lxc/400","uptime":2081404,"disk":1403273216,"vmid":400,"diskread":20873936896,"node":"pve","netout":3761660,"diskwrite":1020379136,"type":"lxc","maxcpu":1}]}
+2022/06/22 20:43:42 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/lxc/108/config HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A92E::PCVKkfE5mIqI34sWWQflZo++A9U5SuL4JUiJSg+/ebmM5R9t6wfpdcsDd0jjzWgO+5lMRcoTG1fyDKjWpeCJtZokVjFwPN0KDwQ/fp+a0XHijdvBePVjZ8cW0djzrY7ooSFl3JjOG0kCQlHQtYirkFLs0VdXQagL+oC2uNKPkoSY18mZ+tQ1tmLd305ZvXBvwfVjYi0sv+Vkou7TrpD6P1elmBVfQPhj0WL9cHEb2SZVbux5YuF9fWbXBggpCcVDKmhYDJ56qJfj+kRoUAINb0aoz7Foisvmuwp+r4WO0U3D9meNi8IDQwVQ4O8XCeKrYf/Itxy0+J0ffblmnvSm9Q==
+Csrfpreventiontoken: 62B3A92E:E/5qt56+tdNGFXJtADLeJt74AVzFDjApdnGlAGzHLFY
+Accept-Encoding: gzip
+
+2022/06/22 20:43:42 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 376
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:43:42 GMT
+Expires: Wed, 22 Jun 2022 23:43:42 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"cpulimit":"0","cmode":"tty","swap":0,"tty":2,"ostype":"ubuntu","memory":512,"protection":0,"unprivileged":1,"hostname":"lxc-basic","digest":"f6103005cb5080fdebd33707ae4e1d14bc3c22ae","onboot":0,"net0":"name=eth0,bridge=vmbr0,hwaddr=EE:69:4E:B3:21:9E,ip=dhcp,type=veth","cpuunits":1024,"console":1,"rootfs":"local-lvm:vm-108-disk-0,size=8G","cores":1,"arch":"amd64"}}
+2022/06/22 20:43:42 >>>>>>>>>> REQUEST:
+GET /api2/json/cluster/ha/resources/108 HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A92E::PCVKkfE5mIqI34sWWQflZo++A9U5SuL4JUiJSg+/ebmM5R9t6wfpdcsDd0jjzWgO+5lMRcoTG1fyDKjWpeCJtZokVjFwPN0KDwQ/fp+a0XHijdvBePVjZ8cW0djzrY7ooSFl3JjOG0kCQlHQtYirkFLs0VdXQagL+oC2uNKPkoSY18mZ+tQ1tmLd305ZvXBvwfVjYi0sv+Vkou7TrpD6P1elmBVfQPhj0WL9cHEb2SZVbux5YuF9fWbXBggpCcVDKmhYDJ56qJfj+kRoUAINb0aoz7Foisvmuwp+r4WO0U3D9meNi8IDQwVQ4O8XCeKrYf/Itxy0+J0ffblmnvSm9Q==
+Csrfpreventiontoken: 62B3A92E:E/5qt56+tdNGFXJtADLeJt74AVzFDjApdnGlAGzHLFY
+Accept-Encoding: gzip
+
+2022/06/22 20:43:42 <<<<<<<<<< RESULT:
+HTTP/1.1 403 Permission check failed (/, Sys.Audit)
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:43:42 GMT
+Expires: Wed, 22 Jun 2022 23:43:42 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2022/06/22 20:43:42 [DEBUG][GetJsonRetryable] Sleeping for 1 seconds before asking url /cluster/ha/resources/108
+2022/06/22 20:43:43 >>>>>>>>>> REQUEST:
+GET /api2/json/cluster/ha/resources/108 HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A92E::PCVKkfE5mIqI34sWWQflZo++A9U5SuL4JUiJSg+/ebmM5R9t6wfpdcsDd0jjzWgO+5lMRcoTG1fyDKjWpeCJtZokVjFwPN0KDwQ/fp+a0XHijdvBePVjZ8cW0djzrY7ooSFl3JjOG0kCQlHQtYirkFLs0VdXQagL+oC2uNKPkoSY18mZ+tQ1tmLd305ZvXBvwfVjYi0sv+Vkou7TrpD6P1elmBVfQPhj0WL9cHEb2SZVbux5YuF9fWbXBggpCcVDKmhYDJ56qJfj+kRoUAINb0aoz7Foisvmuwp+r4WO0U3D9meNi8IDQwVQ4O8XCeKrYf/Itxy0+J0ffblmnvSm9Q==
+Csrfpreventiontoken: 62B3A92E:E/5qt56+tdNGFXJtADLeJt74AVzFDjApdnGlAGzHLFY
+Accept-Encoding: gzip
+
+2022/06/22 20:43:43 <<<<<<<<<< RESULT:
+HTTP/1.1 403 Permission check failed (/, Sys.Audit)
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:43:43 GMT
+Expires: Wed, 22 Jun 2022 23:43:43 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2022/06/22 20:43:43 [DEBUG][GetJsonRetryable] Sleeping for 2 seconds before asking url /cluster/ha/resources/108
+2022/06/22 20:43:45 >>>>>>>>>> REQUEST:
+GET /api2/json/cluster/ha/resources/108 HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A92E::PCVKkfE5mIqI34sWWQflZo++A9U5SuL4JUiJSg+/ebmM5R9t6wfpdcsDd0jjzWgO+5lMRcoTG1fyDKjWpeCJtZokVjFwPN0KDwQ/fp+a0XHijdvBePVjZ8cW0djzrY7ooSFl3JjOG0kCQlHQtYirkFLs0VdXQagL+oC2uNKPkoSY18mZ+tQ1tmLd305ZvXBvwfVjYi0sv+Vkou7TrpD6P1elmBVfQPhj0WL9cHEb2SZVbux5YuF9fWbXBggpCcVDKmhYDJ56qJfj+kRoUAINb0aoz7Foisvmuwp+r4WO0U3D9meNi8IDQwVQ4O8XCeKrYf/Itxy0+J0ffblmnvSm9Q==
+Csrfpreventiontoken: 62B3A92E:E/5qt56+tdNGFXJtADLeJt74AVzFDjApdnGlAGzHLFY
+Accept-Encoding: gzip
+
+2022/06/22 20:43:45 <<<<<<<<<< RESULT:
+HTTP/1.1 403 Permission check failed (/, Sys.Audit)
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:43:45 GMT
+Expires: Wed, 22 Jun 2022 23:43:45 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2022/06/22 20:43:45 [DEBUG][GetJsonRetryable] Sleeping for 3 seconds before asking url /cluster/ha/resources/108
+2022/06/22 20:43:48 [DEBUG] Container 108(lxc-basic) has no HA config
+2022/06/22 20:43:48 >>>>>>>>>> REQUEST:
+GET /api2/json/pools HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A92E::PCVKkfE5mIqI34sWWQflZo++A9U5SuL4JUiJSg+/ebmM5R9t6wfpdcsDd0jjzWgO+5lMRcoTG1fyDKjWpeCJtZokVjFwPN0KDwQ/fp+a0XHijdvBePVjZ8cW0djzrY7ooSFl3JjOG0kCQlHQtYirkFLs0VdXQagL+oC2uNKPkoSY18mZ+tQ1tmLd305ZvXBvwfVjYi0sv+Vkou7TrpD6P1elmBVfQPhj0WL9cHEb2SZVbux5YuF9fWbXBggpCcVDKmhYDJ56qJfj+kRoUAINb0aoz7Foisvmuwp+r4WO0U3D9meNi8IDQwVQ4O8XCeKrYf/Itxy0+J0ffblmnvSm9Q==
+Csrfpreventiontoken: 62B3A92E:E/5qt56+tdNGFXJtADLeJt74AVzFDjApdnGlAGzHLFY
+Accept-Encoding: gzip
+
+2022/06/22 20:43:48 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 11
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:43:48 GMT
+Expires: Wed, 22 Jun 2022 23:43:48 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":[]}
+[90mWed, 22 Jun 2022 20:43:50 -0300[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:155[0m[36m >[0m Enabling the capture of log-library logs as ithe _capturelog flag was detected
+[90mWed, 22 Jun 2022 20:43:50 -0300[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/proxmox/util.go:188[0m[36m >[0m Logging Started. Root Logger Set to level debug
+2022/06/22 20:43:50 >>>>>>>>>> REQUEST:
+GET /api2/json/cluster/resources?type=vm HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A936::NyW6YhyP8YBeeCEGMMUsnK8l7m1FkDt0kxgpmGRAb/WjN2KiZFkxGgSLFujbOEm+0jjAhi/HdMNZal4A6u35So0mZ7bazNmBQkmfaSXRlMEq/sHzlWiwjXN3OmFsdropi9BEIda18E19LEWqTtgVi3tD5c5wa191G7pkTVRXwhxF4IHe/igNtPFJwHLD5gYqm3XjhOnoKal1SgrxRC/u1l4sR2fPjL/eNNlYl97wDRXS3AegY80gaHPrh8+FgNFr/WXV9sA9jvdvwthNm7Ydsz85feW/X9xeHCJ/UadUgWo17AICyoQAM+xH+BtAYI07hGd1YyDXjBNkSKXMA0gH6g==
+Csrfpreventiontoken: 62B3A936:iNPNEutX6wFglz6G5gCWcnI+AdRlEJ4NPZNDapJEafM
+Accept-Encoding: gzip
+
+2022/06/22 20:43:50 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 3711
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:43:50 GMT
+Expires: Wed, 22 Jun 2022 23:43:50 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":[{"maxmem":536870912,"cpu":0.00117422148883873,"netin":995728809,"name":"pihole","status":"running","template":0,"mem":111529984,"maxdisk":10501771264,"diskwrite":41727041536,"maxcpu":1,"type":"lxc","diskread":103144374272,"netout":252748317,"node":"pve","uptime":2081920,"vmid":100,"disk":3923177472,"id":"lxc/100"},{"template":0,"mem":158019584,"maxdisk":12573614080,"name":"plex","status":"running","netin":1539091830,"maxmem":1073741824,"cpu":0.0152826705895829,"id":"lxc/101","uptime":2081806,"disk":3588182016,"vmid":101,"diskread":38146908160,"netout":57229041478,"node":"pve","diskwrite":227468812288,"maxcpu":6,"type":"lxc"},{"diskwrite":126025728,"maxcpu":2,"type":"lxc","diskread":987295744,"netout":198260,"node":"pve","uptime":67161,"disk":3021991936,"vmid":102,"id":"lxc/102","maxmem":536870912,"cpu":0.000213494816152497,"netin":29756863,"name":"finance","status":"running","template":0,"mem":130662400,"maxdisk":12573614080},{"netout":530800478,"node":"pve","diskread":43407147008,"maxcpu":2,"type":"lxc","diskwrite":94972116992,"id":"lxc/103","disk":4318281728,"vmid":103,"uptime":2081859,"netin":2856518486,"maxmem":2147483648,"cpu":0.00496375447554554,"maxdisk":12573614080,"template":0,"mem":932696064,"name":"unifi","status":"running"},{"status":"running","name":"webdav","mem":63520768,"template":0,"maxdisk":83955703808,"cpu":5.33737040381241e-05,"maxmem":2147483648,"netin":648330274,"uptime":1764666,"disk":2054172672,"vmid":104,"id":"lxc/104","diskwrite":8243716096,"type":"lxc","maxcpu":4,"diskread":29990903808,"node":"pve","netout":1245891018},{"node":"pve","netout":7976142,"diskread":37585354752,"type":"lxc","maxcpu":2,"diskwrite":10774732800,"id":"lxc/105","disk":2554183680,"vmid":105,"uptime":2081704,"netin":705306071,"cpu":0.00112084778480061,"maxmem":2147483648,"maxdisk":12573614080,"mem":186179584,"template":0,"status":"running","name":"gitea"},{"diskwrite":11219369984,"type":"lxc","maxcpu":12,"diskread":33127301120,"node":"pve","netout":290693503,"uptime":2081645,"vmid":106,"disk":6152323072,"id":"lxc/106","cpu":8.89561733968736e-06,"maxmem":4294967296,"netin":690598530,"status":"running","name":"bastion","mem":48111616,"template":0,"maxdisk":12573614080},{"template":0,"mem":68370432,"maxdisk":15786254336,"name":"torrent","status":"running","netin":54384093670,"maxmem":536870912,"cpu":0.0115020332202158,"id":"lxc/107","uptime":2081583,"disk":2104901632,"vmid":107,"diskread":33287913472,"netout":77345129446,"node":"pve","diskwrite":16234741760,"type":"lxc","maxcpu":4},{"id":"lxc/108","uptime":0,"disk":0,"vmid":108,"diskread":0,"netout":0,"node":"pve","diskwrite":0,"type":"lxc","maxcpu":1,"template":0,"mem":0,"maxdisk":8589934592,"name":"lxc-basic","status":"stopped","netin":0,"maxmem":536870912,"cpu":0},{"disk":2218455040,"vmid":111,"uptime":66842,"id":"lxc/111","maxcpu":1,"type":"lxc","diskwrite":50003968,"netout":119581,"node":"pve","diskread":1271832576,"name":"wakapi","status":"running","maxdisk":8350298112,"template":0,"mem":41177088,"maxmem":536870912,"cpu":0.000106747408076248,"netin":25907758},{"netin":1102444997,"maxmem":1073741824,"cpu":0.00603122855630803,"template":0,"mem":339685376,"maxdisk":8350298112,"name":"monitoria","status":"running","diskread":15707389952,"netout":1362038811,"node":"pve","diskwrite":19192111104,"type":"lxc","maxcpu":2,"id":"lxc/120","uptime":416365,"vmid":120,"disk":4985798656},{"disk":1403273216,"vmid":400,"uptime":2081414,"id":"lxc/400","maxcpu":1,"type":"lxc","diskwrite":1020379136,"node":"pve","netout":3761660,"diskread":20873936896,"status":"running","name":"automation","maxdisk":12573614080,"mem":35655680,"template":0,"cpu":0.000320242224228745,"maxmem":1073741824,"netin":600177675}]}
+2022/06/22 20:43:50 >>>>>>>>>> REQUEST:
+POST /api2/json/nodes/pve/lxc/108/status/stop HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Content-Length: 0
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A936::NyW6YhyP8YBeeCEGMMUsnK8l7m1FkDt0kxgpmGRAb/WjN2KiZFkxGgSLFujbOEm+0jjAhi/HdMNZal4A6u35So0mZ7bazNmBQkmfaSXRlMEq/sHzlWiwjXN3OmFsdropi9BEIda18E19LEWqTtgVi3tD5c5wa191G7pkTVRXwhxF4IHe/igNtPFJwHLD5gYqm3XjhOnoKal1SgrxRC/u1l4sR2fPjL/eNNlYl97wDRXS3AegY80gaHPrh8+FgNFr/WXV9sA9jvdvwthNm7Ydsz85feW/X9xeHCJ/UadUgWo17AICyoQAM+xH+BtAYI07hGd1YyDXjBNkSKXMA0gH6g==
+Csrfpreventiontoken: 62B3A936:iNPNEutX6wFglz6G5gCWcnI+AdRlEJ4NPZNDapJEafM
+Accept-Encoding: gzip
+
+2022/06/22 20:43:51 <<<<<<<<<< RESULT:
+HTTP/1.1 500 CT 108 not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:43:51 GMT
+Expires: Wed, 22 Jun 2022 23:43:51 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2022/06/22 20:43:53 >>>>>>>>>> REQUEST:
+POST /api2/json/nodes/pve/lxc/108/status/stop HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Content-Length: 0
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A936::NyW6YhyP8YBeeCEGMMUsnK8l7m1FkDt0kxgpmGRAb/WjN2KiZFkxGgSLFujbOEm+0jjAhi/HdMNZal4A6u35So0mZ7bazNmBQkmfaSXRlMEq/sHzlWiwjXN3OmFsdropi9BEIda18E19LEWqTtgVi3tD5c5wa191G7pkTVRXwhxF4IHe/igNtPFJwHLD5gYqm3XjhOnoKal1SgrxRC/u1l4sR2fPjL/eNNlYl97wDRXS3AegY80gaHPrh8+FgNFr/WXV9sA9jvdvwthNm7Ydsz85feW/X9xeHCJ/UadUgWo17AICyoQAM+xH+BtAYI07hGd1YyDXjBNkSKXMA0gH6g==
+Csrfpreventiontoken: 62B3A936:iNPNEutX6wFglz6G5gCWcnI+AdRlEJ4NPZNDapJEafM
+Accept-Encoding: gzip
+
+2022/06/22 20:43:53 <<<<<<<<<< RESULT:
+HTTP/1.1 500 CT 108 not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:43:53 GMT
+Expires: Wed, 22 Jun 2022 23:43:53 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2022/06/22 20:43:55 >>>>>>>>>> REQUEST:
+POST /api2/json/nodes/pve/lxc/108/status/stop HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Content-Length: 0
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A936::NyW6YhyP8YBeeCEGMMUsnK8l7m1FkDt0kxgpmGRAb/WjN2KiZFkxGgSLFujbOEm+0jjAhi/HdMNZal4A6u35So0mZ7bazNmBQkmfaSXRlMEq/sHzlWiwjXN3OmFsdropi9BEIda18E19LEWqTtgVi3tD5c5wa191G7pkTVRXwhxF4IHe/igNtPFJwHLD5gYqm3XjhOnoKal1SgrxRC/u1l4sR2fPjL/eNNlYl97wDRXS3AegY80gaHPrh8+FgNFr/WXV9sA9jvdvwthNm7Ydsz85feW/X9xeHCJ/UadUgWo17AICyoQAM+xH+BtAYI07hGd1YyDXjBNkSKXMA0gH6g==
+Csrfpreventiontoken: 62B3A936:iNPNEutX6wFglz6G5gCWcnI+AdRlEJ4NPZNDapJEafM
+Accept-Encoding: gzip
+
+2022/06/22 20:43:55 <<<<<<<<<< RESULT:
+HTTP/1.1 500 CT 108 not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:43:55 GMT
+Expires: Wed, 22 Jun 2022 23:43:55 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2022/06/22 20:43:57 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/lxc/108/status/current HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A936::NyW6YhyP8YBeeCEGMMUsnK8l7m1FkDt0kxgpmGRAb/WjN2KiZFkxGgSLFujbOEm+0jjAhi/HdMNZal4A6u35So0mZ7bazNmBQkmfaSXRlMEq/sHzlWiwjXN3OmFsdropi9BEIda18E19LEWqTtgVi3tD5c5wa191G7pkTVRXwhxF4IHe/igNtPFJwHLD5gYqm3XjhOnoKal1SgrxRC/u1l4sR2fPjL/eNNlYl97wDRXS3AegY80gaHPrh8+FgNFr/WXV9sA9jvdvwthNm7Ydsz85feW/X9xeHCJ/UadUgWo17AICyoQAM+xH+BtAYI07hGd1YyDXjBNkSKXMA0gH6g==
+Csrfpreventiontoken: 62B3A936:iNPNEutX6wFglz6G5gCWcnI+AdRlEJ4NPZNDapJEafM
+Accept-Encoding: gzip
+
+2022/06/22 20:43:57 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 245
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:43:57 GMT
+Expires: Wed, 22 Jun 2022 23:43:57 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"name":"lxc-basic","swap":0,"diskwrite":0,"diskread":0,"status":"stopped","maxswap":0,"type":"lxc","vmid":108,"maxdisk":8589934592,"mem":0,"netin":0,"disk":0,"ha":{"managed":0},"cpus":1,"maxmem":536870912,"uptime":0,"netout":0,"cpu":0}}
+2022/06/22 20:43:57 >>>>>>>>>> REQUEST:
+DELETE /api2/json/nodes/pve/lxc/108 HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A936::NyW6YhyP8YBeeCEGMMUsnK8l7m1FkDt0kxgpmGRAb/WjN2KiZFkxGgSLFujbOEm+0jjAhi/HdMNZal4A6u35So0mZ7bazNmBQkmfaSXRlMEq/sHzlWiwjXN3OmFsdropi9BEIda18E19LEWqTtgVi3tD5c5wa191G7pkTVRXwhxF4IHe/igNtPFJwHLD5gYqm3XjhOnoKal1SgrxRC/u1l4sR2fPjL/eNNlYl97wDRXS3AegY80gaHPrh8+FgNFr/WXV9sA9jvdvwthNm7Ydsz85feW/X9xeHCJ/UadUgWo17AICyoQAM+xH+BtAYI07hGd1YyDXjBNkSKXMA0gH6g==
+Csrfpreventiontoken: 62B3A936:iNPNEutX6wFglz6G5gCWcnI+AdRlEJ4NPZNDapJEafM
+Accept-Encoding: gzip
+
+2022/06/22 20:43:57 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 80
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:43:57 GMT
+Expires: Wed, 22 Jun 2022 23:43:57 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":"UPID:pve:003A765C:0C6906AD:62B3A93D:vzdestroy:108:terraform-prov@pve:"}
+2022/06/22 20:43:57 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/tasks/UPID:pve:003A765C:0C6906AD:62B3A93D:vzdestroy:108:terraform-prov@pve:/status HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A936::NyW6YhyP8YBeeCEGMMUsnK8l7m1FkDt0kxgpmGRAb/WjN2KiZFkxGgSLFujbOEm+0jjAhi/HdMNZal4A6u35So0mZ7bazNmBQkmfaSXRlMEq/sHzlWiwjXN3OmFsdropi9BEIda18E19LEWqTtgVi3tD5c5wa191G7pkTVRXwhxF4IHe/igNtPFJwHLD5gYqm3XjhOnoKal1SgrxRC/u1l4sR2fPjL/eNNlYl97wDRXS3AegY80gaHPrh8+FgNFr/WXV9sA9jvdvwthNm7Ydsz85feW/X9xeHCJ/UadUgWo17AICyoQAM+xH+BtAYI07hGd1YyDXjBNkSKXMA0gH6g==
+Csrfpreventiontoken: 62B3A936:iNPNEutX6wFglz6G5gCWcnI+AdRlEJ4NPZNDapJEafM
+Accept-Encoding: gzip
+
+2022/06/22 20:43:57 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 235
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:43:57 GMT
+Expires: Wed, 22 Jun 2022 23:43:57 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"id":"108","user":"terraform-prov@pve","starttime":1655941437,"status":"running","upid":"UPID:pve:003A765C:0C6906AD:62B3A93D:vzdestroy:108:terraform-prov@pve:","node":"pve","type":"vzdestroy","pstart":208209581,"pid":3831388}}
+2022/06/22 20:43:59 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/tasks/UPID:pve:003A765C:0C6906AD:62B3A93D:vzdestroy:108:terraform-prov@pve:/status HTTP/1.1
+Host: pve:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Cookie: PVEAuthCookie=PVE:terraform-prov@pve:62B3A936::NyW6YhyP8YBeeCEGMMUsnK8l7m1FkDt0kxgpmGRAb/WjN2KiZFkxGgSLFujbOEm+0jjAhi/HdMNZal4A6u35So0mZ7bazNmBQkmfaSXRlMEq/sHzlWiwjXN3OmFsdropi9BEIda18E19LEWqTtgVi3tD5c5wa191G7pkTVRXwhxF4IHe/igNtPFJwHLD5gYqm3XjhOnoKal1SgrxRC/u1l4sR2fPjL/eNNlYl97wDRXS3AegY80gaHPrh8+FgNFr/WXV9sA9jvdvwthNm7Ydsz85feW/X9xeHCJ/UadUgWo17AICyoQAM+xH+BtAYI07hGd1YyDXjBNkSKXMA0gH6g==
+Csrfpreventiontoken: 62B3A936:iNPNEutX6wFglz6G5gCWcnI+AdRlEJ4NPZNDapJEafM
+Accept-Encoding: gzip
+
+2022/06/22 20:43:59 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 253
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 22 Jun 2022 23:43:59 GMT
+Expires: Wed, 22 Jun 2022 23:43:59 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"node":"pve","type":"vzdestroy","pstart":208209581,"pid":3831388,"exitstatus":"OK","id":"108","user":"terraform-prov@pve","status":"stopped","starttime":1655941437,"upid":"UPID:pve:003A765C:0C6906AD:62B3A93D:vzdestroy:108:terraform-prov@pve:"}}
