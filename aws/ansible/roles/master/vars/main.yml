@@ -1,7 +1,0 @@
----
-user: ubuntu
-CIDRnetworkPods: 192.168.0.0/16
-KubeConfigFile: /etc/kubernetes/admin.conf
-UserKubeDir: /home/{{ user }}/.kube/
-
-CalicoFile: https://docs.projectcalico.org/manifests/calico.yaml
