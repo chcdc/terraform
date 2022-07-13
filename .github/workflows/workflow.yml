@@ -61,5 +61,6 @@ jobs:
         with:
           directory: .
           framework: terraform
+          skip_check: CKV_AZURE_1
     needs: [validate]
 
