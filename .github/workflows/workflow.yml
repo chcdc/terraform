@@ -35,7 +35,7 @@ jobs:
         env:
           PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         run: |
-          ssh-keygen -f $PRIVATE_KEY -y > ~/.ssh/id_rsa.pub
+          ssh-keygen -f $PRIVATE_KEY -y > ${GITHUB_WORKSPACE}/.ssh/id_rsa.pub
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
