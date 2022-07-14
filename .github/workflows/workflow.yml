@@ -32,12 +32,10 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install SSH key
-        uses: shimataro/ssh-key-action@v2
-        with:
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          known_hosts: ${{ secrets.KNOWN_HOSTS }}
-          name: id_rsa
-          if_key_exists: fail
+        env:
+          PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        run: |
+          ssh-keygen -f $PRIVATE_KEY -y > ~/.ssh/id_rsa.pub
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
