@@ -1,8 +1,7 @@
 resource "azurerm_network_interface" "nic" {
-  name                      = "${var.machine}-Interface"
-  location                  = var.location
-  resource_group_name       = azurerm_resource_group.homolog.name
-  network_security_group_id = azurerm_network_security_group.default_group.id
+  name                = "${var.machine}-Interface"
+  location            = var.location
+  resource_group_name = azurerm_resource_group.homolog.name
 
   ip_configuration {
     name                          = "NICConfiguration"
@@ -18,10 +17,9 @@ resource "azurerm_linux_virtual_machine" "OSvm" {
 
   resource_group_name   = azurerm_resource_group.homolog.name
   network_interface_ids = ["${azurerm_network_interface.nic.id}"]
-  vm_size               = "Standard_B1s"
+  size                  = "Standard_B1s"
 
-  allow_extension_operations    = false
-  delete_os_disk_on_termination = true
+  allow_extension_operations = false
 
   admin_ssh_key {
     username   = var.AdminUser
@@ -31,7 +29,6 @@ resource "azurerm_linux_virtual_machine" "OSvm" {
   os_disk {
     name                 = "OsDisk"
     caching              = "ReadWrite"
-    create_option        = "FromImage"
     storage_account_type = "Standard_LRS"
   }
 
@@ -42,10 +39,6 @@ resource "azurerm_linux_virtual_machine" "OSvm" {
     version   = "latest"
   }
 
-
-  os_profile_linux_config {
-    disable_password_authentication = false
-  }
 }
 
 resource "azurerm_virtual_machine_extension" "extension" {
