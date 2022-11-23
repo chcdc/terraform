@@ -1,4 +1,4 @@
 resource "azurerm_resource_group" "homolog" {
-  name     = "Homolog"
+  name     = "Test - homolog"
   location = var.location
 }
