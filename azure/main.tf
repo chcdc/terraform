@@ -1,4 +1,19 @@
 resource "azurerm_resource_group" "homolog" {
-  name     = "Test - homolog"
+  name     = "homolog"
   location = var.location
 }
+
+terraform {
+  required_version = ">= 1.5.0"
+  required_providers {
+    azurerm = {
+      source = "hashicorp/azurerm"
+    }
+  }
+}
+
+provider "azurerm" {
+  features {}
+}
+
+
