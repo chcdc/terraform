@@ -1,19 +1,25 @@
 variable "location" {
-  default = "East US"
+  description = "The Azure region location"
+  type        = string
+  default     = "East US"
 }
 
 variable "machine" {
-  default = "AppVM"
+  description = "Name of the virtual machine."
+  type        = string
 }
 
 variable "tags" {
-  default = "homolog"
+  description = "The tags for the project"
+  type        = string
 }
 
 variable "AdminUser" {
-  default = "carlos"
+  description = "The admin username for the virtual machines"
+  type        = string
 }
 
 variable "AdminPass" {
-  type = string
+  description = "The admin user's password for the virtual machines"
+  type        = string
 }
