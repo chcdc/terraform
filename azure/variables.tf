@@ -15,6 +15,5 @@ variable "AdminUser" {
 }
 
 variable "AdminPass" {
-  default = "!@#Password!10"
+  type = string
 }
-
