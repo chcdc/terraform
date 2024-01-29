@@ -1,5 +1,5 @@
 resource "azurerm_network_interface" "nic" {
-  name                = "${var.machine}-Interface"
+  name                = "${var.machine}-nic"
   location            = var.location
   resource_group_name = azurerm_resource_group.homolog.name
 
@@ -11,15 +11,11 @@ resource "azurerm_network_interface" "nic" {
 }
 
 resource "azurerm_linux_virtual_machine" "OSvm" {
-  name           = var.machine
-  location       = var.location
-  admin_username = var.AdminUser
-
-  resource_group_name   = azurerm_resource_group.homolog.name
-  network_interface_ids = ["${azurerm_network_interface.nic.id}"]
-  size                  = "Standard_B1s"
-
-  allow_extension_operations = false
+  name                = var.machine
+  location            = var.location
+  admin_username      = var.AdminUser
+  resource_group_name = azurerm_resource_group.homolog.name
+  size                = "Standard_B1s"
 
   admin_ssh_key {
     username   = var.AdminUser
@@ -32,13 +28,14 @@ resource "azurerm_linux_virtual_machine" "OSvm" {
     storage_account_type = "Standard_LRS"
   }
 
+  network_interface_ids = [azurerm_network_interface.nic.id]
+
   source_image_reference {
     publisher = "Canonical"
     offer     = "UbuntuServer"
     sku       = "19.04"
     version   = "latest"
   }
-
 }
 
 resource "azurerm_virtual_machine_extension" "extension" {
@@ -49,3 +46,4 @@ resource "azurerm_virtual_machine_extension" "extension" {
   type_handler_version       = "2.0"
   auto_upgrade_minor_version = true
 }
+

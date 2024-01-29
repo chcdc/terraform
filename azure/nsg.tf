@@ -20,3 +20,4 @@ resource "azurerm_network_security_rule" "AllowHTTPS" {
   source_port_range          = "*"
   source_address_prefix      = "*"
 }
+

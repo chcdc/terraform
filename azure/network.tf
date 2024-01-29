@@ -21,7 +21,8 @@ resource "azurerm_subnet" "PublicSubnet" {
 
 resource "azurerm_public_ip" "PublicIP" {
   name                = "PublicIP"
-  location            = "eastus"
+  location            = var.location
   resource_group_name = azurerm_resource_group.homolog.name
   allocation_method   = "Dynamic"
 }
+
