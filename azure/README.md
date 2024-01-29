@@ -34,11 +34,11 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_AdminPass"></a> [AdminPass](#input\_AdminPass) | n/a | `string` | `"!@#Password!10"` | no |
-| <a name="input_AdminUser"></a> [AdminUser](#input\_AdminUser) | n/a | `string` | `"carlos"` | no |
-| <a name="input_location"></a> [location](#input\_location) | n/a | `string` | `"East US"` | no |
-| <a name="input_machine"></a> [machine](#input\_machine) | n/a | `string` | `"AppVM"` | no |
-| <a name="input_tags"></a> [tags](#input\_tags) | n/a | `string` | `"homolog"` | no |
+| <a name="input_AdminPass"></a> [AdminPass](#input\_AdminPass) | The admin user's password for the virtual machines | `string` | n/a | yes |
+| <a name="input_AdminUser"></a> [AdminUser](#input\_AdminUser) | The admin username for the virtual machines | `string` | n/a | yes |
+| <a name="input_location"></a> [location](#input\_location) | The Azure region location | `string` | `"East US"` | no |
+| <a name="input_machine"></a> [machine](#input\_machine) | Name of the virtual machine. | `string` | n/a | yes |
+| <a name="input_tags"></a> [tags](#input\_tags) | The tags for the project | `string` | n/a | yes |
 
 ## Outputs
 
