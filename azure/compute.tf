@@ -11,11 +11,12 @@ resource "azurerm_network_interface" "nic" {
 }
 
 resource "azurerm_linux_virtual_machine" "OSvm" {
-  name                = var.machine
-  location            = var.location
-  admin_username      = var.AdminUser
-  resource_group_name = azurerm_resource_group.homolog.name
-  size                = "Standard_B1s"
+  name                       = var.machine
+  location                   = var.location
+  admin_username             = var.AdminUser
+  resource_group_name        = azurerm_resource_group.homolog.name
+  size                       = "Standard_B1s"
+  allow_extension_operations = false
 
   admin_ssh_key {
     username   = var.AdminUser
