@@ -26,3 +26,30 @@ resource "azurerm_public_ip" "PublicIP" {
   allocation_method   = "Dynamic"
 }
 
+resource "azurerm_network_security_group" "this" {
+  name                = "Internalnsg"
+  location            = azurerm_resource_group.InternalVNet.location
+  resource_group_name = azurerm_resource_group.InternalSubnet.name
+
+  security_rule {
+    name                       = "Block External"
+    priority                   = 100
+    direction                  = "Inbound"
+    access                     = "Denied"
+    protocol                   = "Tcp"
+    source_port_range          = "*"
+    destination_port_range     = ["22", "3389", "80"]
+    source_address_prefix      = "*"
+    destination_address_prefix = "*"
+  }
+}
+
+resource "azurerm_subnet_network_security_group_association" "this" {
+  subnet_id                 = azurerm_subnet.InternalSubnet.id
+  network_security_group_id = azurerm_network_security_group.Internalnsg.id
+}
+
+resource "azurerm_subnet_network_security_group_association" "this" {
+  subnet_id                 = azurerm_subnet.PublicSubnet.id
+  network_security_group_id = azurerm_network_security_group.Publicnsg.id
+}
