@@ -1,25 +1,40 @@
-<!-- BEGIN_TF_DOCS -->
-## Requirements
+# Terraform Examples Repository
 
-No requirements.
+This repository contains examples of Terraform code for various cloud providers. Each provider has its own directory with specific examples.
 
 ## Providers
 
-No providers.
+### Google Cloud Platform (GCP)
+![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white)
 
-## Modules
+Find GCP-specific examples in the [gcp](./gcp) directory.
 
-No modules.
+#### Usage
 
-## Resources
+1. Navigate to the `gcp` directory.
+2. Follow the README instructions for each example.
 
-No resources.
+### Amazon Web Services (AWS)
+![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
 
-## Inputs
+Find AWS-specific examples in the [aws](./aws) directory.
 
-No inputs.
+#### Usage
 
-## Outputs
+1. Navigate to the `aws` directory.
+2. Follow the README instructions for each example.
 
-No outputs.
-<!-- END_TF_DOCS -->
+### Microsoft Azure 
+![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=microsoftazure&logoColor=white)
+
+Find Azure-specific examples in the [azure](./azure) directory.
+
+#### Usage
+
+1. Navigate to the `azure` directory.
+2. Follow the README instructions for each example.
+
+## Contributing
+
+If you would like to contribute to this repository, feel free to open an issue or submit a pull request.
+
